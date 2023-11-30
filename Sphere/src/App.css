@@ -1,42 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  width: 480px;
+  height: 800px;
+  margin: 2rem auto;
+  background-image: url('img/background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.App:hover {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.App.hot {
+  background-image: linear-gradient(to bottom,
+      rgba(255, 167, 16, 0.52),
+      rgba(0, 0, 0, 0.75)),
+    url('img/hot.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.App.cold {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 229, 255, 0.52),
+      rgba(0, 0, 0, 0.75)),
+    url('img/cold.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.App.rainy {
+  background-image: linear-gradient(to bottom,
+      rgba(121, 190, 190, 0.52),
+      rgba(0, 0, 0, 0.75)),
+    url('img/rainy.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+main {
+  min-height: 100px;
+  padding: 25px;
+}
+
+.search-container {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-bar {
+  color: black;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-container .search-bar:focus {
+  background-color: white;
+}
+
+.location-container {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.location-container .date {
+  color: white;
+  font-size: 20px;
+}
+
+.weather-container {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-container .temp {
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 15px;
+  font-size: 100px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.weather-container .weather {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
