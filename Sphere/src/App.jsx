@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, {useState} from 'react'
 import keys from './keys'
 import './App.css' ;
@@ -6,6 +7,11 @@ const api = {
   key: keys.API_KEY,
   base: keys.BASE_URL
 }
+=======
+import "./App.css";
+import Header from "./components/Header";
+import Report from "./components/Report";
+>>>>>>> Stashed changes
 
 function App() {
 
@@ -16,6 +22,7 @@ function App() {
   }
   return (
     <>
+<<<<<<< Updated upstream
       <div className="App">
         <main>
           <div className="search-container">
@@ -42,6 +49,10 @@ function App() {
 
         </main>
       </div>
+=======
+      <Header />
+      <Report />
+>>>>>>> Stashed changes
     </>
   );
 }
