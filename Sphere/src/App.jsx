@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import Header from './components/Header'
+import Article from './components/Article'
 import keys from './keys'
 import './App.css' ;
 
@@ -17,6 +19,7 @@ function App() {
   return (
     <>
       <div className="App">
+        <Header/>
         <main>
           <div className="search-container">
             <input type="text"
@@ -39,9 +42,9 @@ function App() {
               <div className="weather">Cold</div>
             </div>
           </div>
-
         </main>
       </div>
+      <Article/>
     </>
   );
 }
