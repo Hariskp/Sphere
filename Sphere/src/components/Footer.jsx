@@ -35,7 +35,7 @@ function Footer() {
             Patumthani, Rangsit 11100, Thailand.
           </li>
           <li>
-            sphereweather@sw.com
+            Sphereweather@sw.com
           </li>
           <li>
             (+66) 123 456 789

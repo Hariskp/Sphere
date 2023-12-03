@@ -6,7 +6,7 @@
   .footer-con {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 2rem;
+    padding-bottom: 2rem;
     color: white;
   }
 
@@ -29,6 +29,7 @@
 
   .footer-box1 {
     padding-top: 2rem;
+    font-size: 15px;
   }
 
   .footer-box2 {
