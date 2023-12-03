@@ -2,34 +2,49 @@ import React from "react";
 import './Footer.css'
 
 
-
 function Footer() {
   return(
    <>
      <div className="background">
     <div className="footer">
       <div className="footer-con">
-        <div className="footer-box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet molestiae laboriosam expedita labore eos consequuntur nihil ipsa adipisci deleniti.</div>
+        <div className="footer-box1"><img src="src/img/Logo.png" alt="#" /><h2>SPHERE</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet molestiae laboriosam expedita labore eos consequuntur nihil ipsa adipisci deleniti.</div>
         <div className="footer-box2"> <h3>PRODUCT</h3>
-        <ul>
+        <ol>
           <li>
             Home
-          </li>
-          <li>
-            News
           </li>
           <li>
             Blog
           </li>
           <li>
+            News
+          </li>
+          <li>
             Warning
           </li>
           <li>
-            Forecast
+            Weatherforecast
           </li>
-        </ul>
+        </ol>
         </div>
-        <div className="footer-box3">3</div>
+        <div className="footer-box3"><h3>CONTACT</h3>
+        <ol>
+          <li>
+            Patumthani, Rangsit 11100, Thailand.
+          </li>
+          <li>
+            sphereweather@sw.com
+          </li>
+          <li>
+            (+66) 123 456 789
+          </li>
+          <li>
+            (+66) 123 456 789
+          </li>
+        </ol>
+        </div>
       </div>
     </div>
     </div>

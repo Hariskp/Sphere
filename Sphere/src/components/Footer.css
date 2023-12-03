@@ -22,10 +22,32 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 50px;
+   font-size: 12px;
+   height: 40px;
    color: white;
   }
 
   .footer-box1 {
-    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .footer-box2 {
+    line-height: 25px;
+    display: grid;
+    align-items: center;
+    padding-left: 5rem ;
+    padding-top: 3rem;
+  }
+
+  .footer-box3 {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    line-height: 25px;
+    display: grid;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    align-items: center;
   }
