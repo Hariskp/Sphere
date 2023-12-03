@@ -12,39 +12,39 @@ const Footer = () => {
         <div className="sb_footer-links">
           <div className="sb_footer-links_div">
             <h4>PRODUCT</h4>
-            <a href="/employer">
+            <a href="/home">
               <p>HOME</p>
             </a>
-            <a href="/healthplan">
+            <a href="/news">
               <p>NEWS</p>
             </a>
-            <a href="/individual">
+            <a href="/blog">
               <p>BLOG</p>
             </a>
-            <a href="/individual">
+            <a href="/warning">
               <p>WARNING</p>
             </a>
-            <a href="/individual">
+            <a href="/weatherforecast">
               <p>WEATHERFORECAST</p>
             </a>
           </div>
           <div className="sb_footer-links_div">
-            <h4>ABOUT US</h4>
-            <a href="/about">
-              <p>ABOUT SPHERE</p>
+            <h4>ABOUT</h4>
+            <a href="/sphere">
+              <p>SPHERE</p>
             </a>
-            <a href="/press">
-              <p>ABOUT TEAM</p>
+            <a href="/team">
+              <p>TEAM</p>
             </a>
             <a href="/career">
-              <p>Career</p>
+              <p>#</p>
             </a>
             <a href="/contact">
-              <p>Contact</p>
+              <p>#</p>
             </a>
           </div>
           <div className="sb_footer-links_div">
-            <h4>Coming soon on</h4>
+            <h4>OUR SOCIAL</h4>
             <div className="socialmedia">
                   <p><img src={fb} alt="" /></p>
                   <p><img src={insta} alt="" /></p>
