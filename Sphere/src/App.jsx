@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {/* <Header /> */}
+        <Header />
         <main>
           <div className="search-container">
             <input type="text" placeholder="Search..." className="search-bar" />
@@ -38,6 +38,7 @@ function App() {
         </main>
       </div>
       <Article />
+      <Footer />
     </>
   );
 }
