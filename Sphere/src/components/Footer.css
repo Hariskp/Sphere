@@ -1,0 +1,31 @@
+.footer {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+  .footer-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    color: white;
+  }
+
+  .background {
+    background-color: #1E1E1E;
+  }
+
+  .copy-background {
+    background-color: #262626;
+    }
+
+  .copy-right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   color: white;
+  }
+
+  .footer-box1 {
+    padding: 1rem;
+  }
