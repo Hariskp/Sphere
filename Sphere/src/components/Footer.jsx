@@ -11,7 +11,7 @@ function Footer() {
         <div className="footer-box1"><img src="src/img/Logo.png" alt="#" /><h2>SPHERE</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet molestiae laboriosam expedita labore eos consequuntur nihil ipsa adipisci deleniti.</div>
         <div className="footer-box2"> <h3>PRODUCT</h3>
-        <ol>
+        <ul>
           <li>
             Home
           </li>
@@ -27,10 +27,10 @@ function Footer() {
           <li>
             Weatherforecast
           </li>
-        </ol>
+        </ul>
         </div>
         <div className="footer-box3"><h3>CONTACT</h3>
-        <ol>
+        <ul>
           <li>
             Patumthani, Rangsit 11100, Thailand.
           </li>
@@ -43,7 +43,7 @@ function Footer() {
           <li>
             (+66) 123 456 789
           </li>
-        </ol>
+        </ul>
         </div>
       </div>
     </div>

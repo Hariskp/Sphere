@@ -27,6 +27,10 @@
    color: white;
   }
 
+.footer-box1 img {
+  margin-left: 6px;
+}
+
   .footer-box1 {
     padding-top: 2rem;
     font-size: 15px;
