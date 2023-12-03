@@ -1,9 +1,37 @@
+.subscribe-input {
+  display: flex;
+}
+
+.subscribe-input input {
+  width: 500px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contacts {
+  margin-top: 0.5rem;
+  line-height: 1.5px;
+}
+
+
+.subscribe-input button {
+  min-width: 80px;
+  margin-left: 0.5rem;
+  padding: 5px;
+  background-color: rgb(99, 119, 207); 
+  border-radius: 3px;
+  color: white; 
+  border: none;
+  cursor: pointer;
+}
+
 .section_padding{
   padding: 1rem 10rem;
 }
 
 .footer {
-  background-color:#2d2d32 ;
+  background-color:#1E1E1E ;
 }
 
 .sb_footer {
@@ -14,7 +42,7 @@
 .sb_footer-links {
   display: flex;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-items: self-start;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -87,6 +115,12 @@ hr {
   line-height: 15px;
   color: rgb(255,255,255);
   font-weight: 600;
+}
+
+.socialmedia {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 10px; 
 }
 
 @media screen and (max-width: 850px) {

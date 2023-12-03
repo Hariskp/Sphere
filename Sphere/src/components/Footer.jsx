@@ -31,17 +31,20 @@ const Footer = () => {
           <div className="sb_footer-links_div">
             <h4>ABOUT</h4>
             <a href="/sphere">
-              <p>SPHERE</p>
+              <p>SPHERE WEATHER</p>
             </a>
             <a href="/team">
-              <p>TEAM</p>
+              <p>OUR SPHERE TEAM</p>
             </a>
-            <a href="/career">
-              <p>#</p>
-            </a>
-            <a href="/contact">
-              <p>#</p>
-            </a>
+            <div className="contacts">
+              <h4>CONTACT</h4>
+              <a href="/email">
+                <p>sphereweather@hotmail.net</p>
+              </a>
+              <a href="/address">
+                <p>6573 Bangkok, Thailand</p>
+              </a>
+            </div>
           </div>
           <div className="sb_footer-links_div">
             <h4>OUR SOCIAL</h4>
@@ -50,6 +53,11 @@ const Footer = () => {
                   <p><img src={insta} alt="" /></p>
                   <p><img src={linkedin} alt="" /></p>
                   <p><img src={twitter} alt="" /></p>
+            </div>
+            <h4>SUBSCRIBE</h4>
+            <div className="subscribe-input">
+              <input type="text" placeholder='Email address'/>
+              <button type="submit">Sign-up</button>
             </div>
           </div>
         </div>
