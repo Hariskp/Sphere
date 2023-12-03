@@ -6,9 +6,8 @@
 }
 
 .App {
-  width: 1400px;
+  width: auto;
   height: 800px;
-  margin: 2rem auto;
   background-image: url("img/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
