@@ -13,8 +13,8 @@
 
 .sb_footer-links {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
