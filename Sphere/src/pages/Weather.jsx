@@ -1,9 +1,16 @@
 import React from "react";
+import "../App.css";
+import "./Weather.css";
 
 const Weather = () => {
   return (
-    <div>
-      <h1>This is Weather Page</h1>
+    <div className="Weather">
+      <main>
+        <div className="search-container">
+          <input type="text" placeholder="Search..." className="search-bar" />
+        </div>
+        <div className="container"></div>
+      </main>
     </div>
   );
 };
