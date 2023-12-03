@@ -29,18 +29,6 @@ const Footer = () => {
             </a>
           </div>
           <div className="sb_footer-links_div">
-            <h4>ABOUT</h4>
-            <a href="/resources">
-              <p>Resources center</p>
-            </a>
-            <a href="/resources">
-              <p>Testimotials</p>
-            </a>
-            <a href="/resources">
-              <p>STV</p>
-            </a>
-          </div>
-          <div className="sb_footer-links_div">
             <h4>ABOUT US</h4>
             <a href="/about">
               <p>ABOUT SPHERE</p>
