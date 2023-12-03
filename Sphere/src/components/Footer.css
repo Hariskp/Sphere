@@ -13,7 +13,7 @@
 
 .sb_footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
