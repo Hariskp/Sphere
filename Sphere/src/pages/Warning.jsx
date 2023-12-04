@@ -1,16 +1,11 @@
 import React from 'react';
-import './Warning.css';
+import Wallpaper from '../img/rainy_.jpg';
+import BannerImage from '../img/banner-warning.jpg';
 
 function Warning() {
     return (
         <>
-        <div className="recent-warning">
-            <div className="recent-border">
-                <div className="content">
-                    <h1>Test</h1>
-                </div>
-            </div>
-        </div>
+
         </>
     )
 }
