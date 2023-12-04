@@ -5,6 +5,8 @@ import "./index.css";
 
 import Weather from "./pages/Weather.jsx";
 
+import Warning from "./pages/Warning.jsx";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/Weather",
     element: <Weather />,
+  },
+  {
+    path: "/Warning",
+    element: <Warning/>
   },
 ]);
 
