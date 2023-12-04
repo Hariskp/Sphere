@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="sb_footer-links_div">
-            <h4>OUR SOCIAL</h4>
+            <h4>SOCIAL MEDIA</h4>
             <div className="socialmedia">
                   <p><img src={fb} alt="" /></p>
                   <p><img src={insta} alt="" /></p>
