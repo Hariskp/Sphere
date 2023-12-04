@@ -1,0 +1,37 @@
+.temperature-container {
+  width: auto;
+  height: 350px;
+  padding: 50px;
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  align-items: center;
+}
+
+.date {
+  font-size: 30px;
+  justify-content: center;
+}
+
+.temperature {
+  font-size: 150px;
+  justify-content: center;
+}
+
+.location {
+  font-size: 25px;
+  justify-content: center;
+}
+
+.map-container {
+  width: auto;
+  height: 350px;
+  background-color: blue;
+  padding: 50px;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
