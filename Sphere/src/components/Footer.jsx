@@ -3,6 +3,8 @@ import fb from '../img/fb.png';
 import insta from '../img/insta.png';
 import linkedin from  '../img/Linkedin.png';
 import twitter from '../img/twitter.png';
+import email from '../img/email.png';
+import gps from '../img/gps.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -38,11 +40,13 @@ const Footer = () => {
             </a>
             <div className="contacts">
               <h4>CONTACT</h4>
-              <a href="/email">
-                <p>sphereweather@hotmail.net</p>
+              <a href="/mail" className='contact-link'>
+              <img src={email} alt="" />
+              <p>SPHEREWEATHER@HOTMAIL.NET</p>
               </a>
-              <a href="/address">
-                <p>6573 Bangkok, Thailand</p>
+              <a href="/address" className='contact-link'>
+                <img src={gps} alt="" />
+                <p>BANGKOK, THAILAND 11100</p>
               </a>
             </div>
           </div>

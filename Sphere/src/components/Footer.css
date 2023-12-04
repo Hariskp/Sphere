@@ -14,6 +14,21 @@
   line-height: 1.5px;
 }
 
+.contact-link {
+  display: flex;
+  align-items: center; 
+}
+
+.contact-link p {
+  display: inline;
+  margin-left: 10px;
+}
+
+.contact-link img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px; 
+}
 
 .subscribe-input button {
   min-width: 80px;
