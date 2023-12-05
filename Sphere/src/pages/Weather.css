@@ -1,5 +1,9 @@
+.Weather {
+  background-color: #e1e1e1;
+}
+
 .temperature-container {
-  width: auto;
+  width: 500px;
   height: 350px;
   padding: 50px;
   background-image: url("../img/background.webp");
@@ -7,6 +11,8 @@
   background-size: cover;
   border-radius: 5%;
   align-items: center;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .date {
@@ -26,12 +32,28 @@
 
 .map-container {
   width: auto;
-  height: 350px;
-  background-color: blue;
-  padding: 50px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.map {
+  display: flex;
+  border-radius: 5%;
+  border: 0;
 }
 
 .weather-container {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.uv-container {
+  margin: auto;
+  padding: 10%;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
