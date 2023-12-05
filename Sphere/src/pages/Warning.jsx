@@ -7,7 +7,11 @@ function Warning() {
     <div className="warning-page">
       <div className="banner-bg">
         <img src={BannerImage} alt="banner" />
-        <input className="search" type="text" placeholder="Searching here..." />
+        <input
+          className="search-warn"
+          type="text"
+          placeholder="Searching here..."
+        />
       </div>
     </div>
   );
