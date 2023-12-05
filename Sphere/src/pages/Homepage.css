@@ -18,6 +18,7 @@
     font-weight: bold;
     padding-top: 75px;
     padding-left: 400px;
+    font-style: italic;
 }
 
 .search-container p {
@@ -36,6 +37,7 @@
     appearance: none;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    font-style: italic;
 }
 
 .right-info {
@@ -74,31 +76,31 @@
     flex-direction: row;
     padding: 10px;
     padding-left: 200px;
-    border: 1px solid red;
 }
 
 .header-logo h4 {
     padding: 10px;
 }
 
-.header-sphere {
-    font-size: 50px;
-    font-weight: bold;
-    padding-left:200px;
-    border: 1px solid black;
-}
-
 .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 18px;
-    padding-left: 200px;
-    padding-top: 10px;
-    border: 1px solid red;
+    gap: 100px;
+    font-size: 20px;
+    padding-left: 200px; 
 }
 
-.content-container img {
+.sphere-blog p {
+    font-size: 14px;
+}
+
+.sphere-blog h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px white;
+}
+
+.img-whatssphere img {
     width: 600px;
     border-radius: 10px;
     display: block;
@@ -106,6 +108,66 @@
     outline: none;
     appearance: none;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-    border: 1px solid red;
 }
 
+.weathernews-content {
+    width: 1500px;
+    margin: 3rem auto;
+    height: 350px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #1C1E26;
+    display: grid;
+    grid-template-columns: 50% 48% 2%;
+}
+
+.sevdays-forecast {
+    display: flex;
+    color: black;
+    width: 600px;
+    height: 250px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 70px;
+}
+
+.sevdays-forecast img {
+    width: 600px;
+    border-radius: 8px;
+}
+
+.weather-news {
+    color: #FFFFFF;
+    display: block;
+    margin: 3rem 3rem 3rem auto;
+}
+
+.dots {
+    margin: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.recent-warning {
+    width: 1500px;
+    margin: 3rem auto;
+    height: 350px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #1C1E26;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #E1E1E1;
+}
