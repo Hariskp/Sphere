@@ -9,6 +9,7 @@ import Warning from "./pages/Warning.jsx";
 import Homepage from "./pages/Homepage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Blog from "./pages/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +24,11 @@ const router = createBrowserRouter([
     path: "/Warning",
     element: <Warning/>
   },
-  // {
-  //   path: "/",
-  //   element: <Homepage />,
-  // },
+  {
+    path: "/Blog",
+    element: <Blog/>
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
