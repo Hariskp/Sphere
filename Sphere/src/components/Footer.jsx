@@ -3,6 +3,8 @@ import fb from '../img/fb.png';
 import insta from '../img/insta.png';
 import linkedin from  '../img/Linkedin.png';
 import twitter from '../img/twitter.png';
+import email from '../img/email.png';
+import gps from '../img/gps.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -12,44 +14,54 @@ const Footer = () => {
         <div className="sb_footer-links">
           <div className="sb_footer-links_div">
             <h4>PRODUCT</h4>
-            <a href="/employer">
+            <a href="/home">
               <p>HOME</p>
             </a>
-            <a href="/healthplan">
+            <a href="/news">
               <p>NEWS</p>
             </a>
-            <a href="/individual">
+            <a href="/blog">
               <p>BLOG</p>
             </a>
-            <a href="/individual">
+            <a href="/warning">
               <p>WARNING</p>
             </a>
-            <a href="/individual">
+            <a href="/weatherforecast">
               <p>WEATHERFORECAST</p>
             </a>
           </div>
           <div className="sb_footer-links_div">
-            <h4>ABOUT US</h4>
-            <a href="/about">
-              <p>ABOUT SPHERE</p>
+            <h4>ABOUT</h4>
+            <a href="/sphere">
+              <p>SPHERE WEATHER</p>
             </a>
-            <a href="/press">
-              <p>ABOUT TEAM</p>
+            <a href="/team">
+              <p>OUR SPHERE TEAM</p>
             </a>
-            <a href="/career">
-              <p>Career</p>
-            </a>
-            <a href="/contact">
-              <p>Contact</p>
-            </a>
+            <div className="contacts">
+              <h4>CONTACT</h4>
+              <a href="/mail" className='contact-link'>
+              <img src={email} alt="" />
+              <p>SPHEREWEATHER@HOTMAIL.NET</p>
+              </a>
+              <a href="/address" className='contact-link'>
+                <img src={gps} alt="" />
+                <p>BANGKOK, THAILAND 11100</p>
+              </a>
+            </div>
           </div>
           <div className="sb_footer-links_div">
-            <h4>Coming soon on</h4>
+            <h4>SOCIAL MEDIA</h4>
             <div className="socialmedia">
                   <p><img src={fb} alt="" /></p>
                   <p><img src={insta} alt="" /></p>
                   <p><img src={linkedin} alt="" /></p>
                   <p><img src={twitter} alt="" /></p>
+            </div>
+            <h4>SUBSCRIBE</h4>
+            <div className="subscribe-input">
+              <input type="text" placeholder='Email address'/>
+              <button type="submit">Sign-up</button>
             </div>
           </div>
         </div>
