@@ -1,3 +1,4 @@
+
 .warning-page {
     background-color: #E1E1E1;
 }
@@ -23,6 +24,9 @@
     object-fit: cover;
 }
 
+.banner-bg {
+    position: sticky;
+}
 
 .search-warn {
     font-size: 17px;
@@ -38,49 +42,62 @@
 .search-warn {
     color: white;
     background-color: rgba(97, 97, 97, 0.75);
-    backdrop-filter: blur(25px) saturate (200%);
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.125);
+    border: 2px;
 }
 
+
+/* Glowing Border Effect When Focus*/
 .search-warn[type=text]:focus, textarea:focus {
     padding: 2rem 2rem;
     box-shadow: 0 0 5px rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
   }
 
+  /* Glowing Border Effect When Focus*/
 .search-warn[type=text], textarea {
     padding: 2rem 2rem;
     outline: none;
     margin: 5px 1px 3px 0px;
   }
 
-.banner-bg {
-    resize: false;
-    position: relative;
-}
-
-.warning-con {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 5rem;
-    justify-content: center;
-    display: grid;
-}
-
-.warning-parag {
-    margin: 10rem 5rem;
+.recent-container {
+    background-color:white;
+    margin: 4rem 4rem;
     height: 300px;
     border-radius: 10px;
-    background-color: #FFFFFF;
+    padding: 2rem;
+    display: grid;
 }
 
-.warning-old {
-    display: grid;
-    width: auto;
-    height: 700px;
-    margin-bottom: 20rem;
-    border-radius: 10px;
+
+.recent-container {
+    box-shadow: 0px 1px 1px rgb(0,0,0,0.5) 
+}
+
+.recent-container:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recent-font {
+    margin: 3rem 4rem;
+    font-size: 30px;
+}
+
+.old-container {
     background-color: #1C1E26;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px;
+    display: grid;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.card-1 h1 {
+    padding: 2rem 2rem;
+    color: white;
 }
