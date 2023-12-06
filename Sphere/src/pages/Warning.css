@@ -1,19 +1,19 @@
 
 .warning-page {
-    background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
-.banner-api{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    transition: 0.3s ease;
-    border-radius: 2px;
-    box-shadow: 3px 3px 10px rgb(0,0,0,0.5);
+.banner-api {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
 }
 
 .banner-api:hover {
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .banner-bg img {

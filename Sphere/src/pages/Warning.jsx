@@ -1,6 +1,6 @@
-import React from 'react';
-import './Warning.css';
-import BannerImage from '../img/banner-warning.jpg';
+import React from "react";
+import "./Warning.css";
+import BannerImage from "../img/banner-warning.jpg";
 
 function Warning() {
     return (
@@ -34,4 +34,4 @@ function Warning() {
     )
 }
 
-export default Warning
+export default Warning;

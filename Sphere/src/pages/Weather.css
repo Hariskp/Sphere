@@ -1,0 +1,77 @@
+.Weather {
+  background-color: #e1e1e1;
+}
+
+.search-container-weather {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-bar-weather {
+  color: black;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.temperature-container {
+  width: 500px;
+  height: 350px;
+  padding: 50px;
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  align-items: center;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.date {
+  font-size: 30px;
+  justify-content: center;
+}
+
+.temperature {
+  font-size: 150px;
+  justify-content: center;
+}
+
+.location {
+  font-size: 25px;
+  justify-content: center;
+}
+
+.map-container {
+  width: auto;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.map {
+  display: flex;
+  border-radius: 5%;
+  border: 0;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.uv-container {
+  margin: auto;
+  padding: 10%;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

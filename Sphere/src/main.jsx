@@ -6,15 +6,17 @@ import "./index.css";
 import Weather from "./pages/Weather.jsx";
 
 import Warning from "./pages/Warning.jsx";
+import Homepage from "./pages/Homepage.jsx";
 
 import About from "./pages/About.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Blog from "./pages/Blog.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Homepage />,
   },
   {
     path: "/Weather",
