@@ -1,0 +1,24 @@
+.Hero-banner {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    height: 500px;
+    position: sticky
+}
+
+.box-sphere {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-sphere h1{
+    font-size: 70px;
+    color: white;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.box-sphere p{
+    font-size: 15px;
+    color: white;
+    width: 50%;
+}

@@ -7,6 +7,8 @@ import Weather from "./pages/Weather.jsx";
 
 import Warning from "./pages/Warning.jsx";
 
+import About from "./pages/About.jsx";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
     path: "/Warning",
     element: <Warning/>
   },
+  {
+    path: "/About",
+    element: <About/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
