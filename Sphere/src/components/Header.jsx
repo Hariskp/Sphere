@@ -14,12 +14,12 @@ function Header() {
                         <p>Weather forecast website</p>
                     </div>
                     <ul class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Weatherforecast</a></li>
-                    <li><a href="">Warning</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Weatherforecast</a></li>
+                    <li><a href="#">Warning</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About us</a></li>
                 </ul>
                 </div>
             </div>
