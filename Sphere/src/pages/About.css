@@ -1,6 +1,7 @@
 
 .Hero-banner {
     background-image: url("../img/aboutusbackground.jpg");
+    position: sticky;
 }
 
 .box-sphere {
