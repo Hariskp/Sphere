@@ -12,12 +12,10 @@ import blog from '../img/blog.png'
 
 
 function Homepage() {
-    const backgroundStyle = {
-        backgroundImage: `url(${image})`,};
     return (
         <>
         <Header />
-        <div className='homepage' style={backgroundStyle}>
+        <div className='homepage'>
             <div className="search-container">
                 <div className="search">
                     <p>FIND THE WEATHER YOU WANT</p></div>
@@ -90,7 +88,7 @@ function Homepage() {
         {/* Blog */}
         <div className="blogs">
             <h1>BLOG</h1>
-            <div className="blog-content">
+            <div className="blog-content-home">
                 <div className="first-blog">
                     <img src={blog} alt="blog" />
                     <div className="tag-1">5 Way to save your health when weather change.</div>

@@ -9,7 +9,19 @@
 .homepage {
     display: grid;
     grid-template-columns: 65% 35%;
-    height: 250px;
+    background-image: url(../img/strom.webp);
+}
+
+.homepage-sunny {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-image: url(../img/sunny_sky.png);
+}
+
+.homepage-clear {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-image: url(../img/clear_sky.png);
 }
 
 .search-container {
@@ -246,7 +258,7 @@
     padding-bottom: 10px;
 }
 
-.blog-content {
+.blog-content-home {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -255,7 +267,7 @@
     margin: auto;
 }
 
-.blog-content img {
+.blog-content-home img {
     width: 100%;
     height: 100%;
     object-fit: cover;
