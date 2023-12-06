@@ -16,11 +16,19 @@ function Warning() {
 
             </div>
             <div className="old-container">
-                <div className="card-1">
+                <div className="header-recent">
                     <h1>Warning</h1>
                 </div>
-                <div className="card-2">2</div>
-                <div className="card-3">3</div>
+                <div className="column-2">
+                    <div className="item1"></div>
+                    <div className="item2"></div>
+                    <div className="item3"></div>
+                </div>
+                <div className="column-3">
+                    <div className="item4"></div>
+                    <div className="item5"></div>
+                    <div className="item6"></div>
+                </div>
             </div>
         </div>
     )

@@ -87,17 +87,80 @@
 
 .old-container {
     background-color: #1C1E26;
-    height: 700px;
+    height: 900px;
     margin: 0 auto;
     border-radius: 10px 10px 0px 0px;
-    display: grid;
-    gap: 10px;
-    gap: 10px 20px;
-    row-gap: 10px;
-    column-gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-1 h1 {
-    padding: 2rem 2rem;
+.header-recent h1 {
+    padding: 2rem 4rem;
     color: white;
+    font-size: 50px;
+}
+
+.column-2 {
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.item1 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.item2 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.item3 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+
+.column-3 {
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.item4 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.item5 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.item6 {
+    margin: 0 auto;
+    background: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
 }
