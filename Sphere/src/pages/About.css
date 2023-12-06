@@ -1,12 +1,15 @@
 
 .Hero-banner {
     background-image: url("../img/aboutusbackground.jpg");
-    position: sticky;
 }
 
 .box-sphere {
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .font-header {
@@ -23,26 +26,21 @@
     line-height: 25px;
 }
 
-.hr {
-    margin: 4rem 4rem 4rem 4rem;
-    width: auto;
-}
-
 .sphere-developer {
     display: flex;
     margin: 5rem 5rem;
 }
 
 .developer {
-    font-size: 70px;
-    height: 100rem;
+    font-size: 80px;
+    height: 110rem;
     color: white;
     left: 93%;
     writing-mode: vertical-lr;
 }
 
 .developer h1 {
-    margin-right: 2rem;
+    margin-top: 1.5rem;
 }
 
 .developer-box {
@@ -51,18 +49,76 @@
 }
 
 .box {
-    margin: 1rem;
-    border-radius: 10px;
-    width: 1550px;
+    display: flex;
+    margin: 2rem 3rem 1rem 2rem;
+    width: 1500px;
     height: 300px;
     color: white;
-    background-color: #313131;
-    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background-color: #242424;
 }
 
-.box p {
-    margin: 2rem 2rem 2rem 2rem;
-    justify-content: center;
-    align-items: center;
+
+.box img {
+    margin: 3rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.information-ris {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+    line-height: 35px;
+}
+
+.information-nut {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+    line-height: 35px;
+}
+
+.information-jom {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+    line-height: 35px;
+}
+
+.information-first {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+    line-height: 35px;
+}
+
+.quote-r h4{
+    font-size: 20px;
+    color: gray;
+    margin-top: 8.5rem;
+    margin-left: 12rem;
+}
+
+.quote-n h4{
+    font-size: 20px;
+    color: gray;
+    margin-top: 8.5rem;
+    margin-left: 14rem;
+}
+
+.quote-j h4{
+    font-size: 20px;
+    color: gray;
+    margin-top: 8.5rem;
+    margin-left: 12rem;
+}
+
+.quote-f h4{
+    font-size: 20px;
+    color: gray;
+    margin-top: 8.5rem;
+    margin-left: 4rem;
 }
 
