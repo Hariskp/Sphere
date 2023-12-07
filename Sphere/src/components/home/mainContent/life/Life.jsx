@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { lifestyle } from "../../../../dummyData";
-// import Heading from "../../../common/heading/Heading"
+import Heading from "../../../common/heading/Heading";
 
 import "../Ppost/ppost.css";
 //copy ppost code
@@ -25,7 +25,7 @@ const Life = () => {
   return (
     <>
       <section className="popularPost life">
-        {/* <Heading title='Weather' /> */}
+        <Heading title="Weather" />
         <div className="content">
           <Slider {...settings}>
             {lifestyle.map((val) => {

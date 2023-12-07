@@ -1,7 +1,7 @@
 import React from "react";
 import "./music.css";
 import Slider from "react-slick";
-// import Heading from "../../../common/heading/Heading"
+import Heading from "../../../common/heading/Heading";
 import { popular } from "../../../../dummyData";
 
 const Music = () => {
@@ -12,17 +12,17 @@ const Music = () => {
     centerPadding: "0",
     slidesToShow: 1,
     speed: 500,
-    rows: 2,
+    rows: 20,
     slidesPerRow: 1,
   };
   return (
     <>
       <section className="music">
-        {/* <Heading title='Disaster' /> */}
+        <Heading title="Disaster" />
         <div className="content">
           <Slider {...settings}>
             {popular
-              .filter((val) => val.catgeory === "fun")
+              .filter((val) => val.catgeory === "weather")
               .map((val) => {
                 return (
                   <div className="items">

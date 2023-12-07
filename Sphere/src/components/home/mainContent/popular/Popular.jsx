@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { popular } from "../../../../dummyData";
-// import Heading from "../../../common/heading/Heading";
+import Heading from "../../../common/heading/Heading";
 
 const Popular = () => {
   const settings = {
@@ -31,7 +31,7 @@ const Popular = () => {
   return (
     <>
       <section className="popular">
-        {/* <Heading title='Popular' /> */}
+        <Heading title="Popular" />
         <div className="content">
           <Slider {...settings}>
             {popular.map((val) => {

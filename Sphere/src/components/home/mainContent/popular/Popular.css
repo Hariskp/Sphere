@@ -39,4 +39,12 @@
   color: #fff;
   font-weight: bold;
   border: 0;
+  cursor: pointer;
+}
+
+.firstlnwza:hover {
+  transform: scale(25);
+  transition: 1s ease;
+  z-index: 10000000000;
+  box-shadow: 1px -10px 219px 4000px rgb(0, 0, 0);
 }
