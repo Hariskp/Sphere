@@ -19,7 +19,7 @@ function Header() {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={"/"}>Weatherforecast</Link>
+                <Link to={"/weather"}>Weatherforecast</Link>
               </li>
               <li>
                 <a href="">Warning</a>

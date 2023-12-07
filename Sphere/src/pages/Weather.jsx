@@ -26,17 +26,15 @@ const Weather = () => {
             />
           </div>
           <div className="weather-container">
-            <div>
-              <div className="temperature-container">
-                <div className="date">Fri 2 Dec 2023</div>
-                <div className="container-temp">
-                  <div className="temperature">30˚</div>
-                  <div className="img-temp">
-                    <img src={icosun} alt="sun" />
-                  </div>
+            <div className="temperature-container">
+              <div className="date">Fri 2 Dec 2023</div>
+              <div className="container-temp">
+                <div className="temperature">30˚</div>
+                <div className="img-temp">
+                  <img src={icosun} alt="sun" />
                 </div>
-                <div className="location">Bangkok, Thailand</div>
               </div>
+              <div className="location">Bangkok, Thailand</div>
             </div>
             <div className="map-container">
               <div className="map">
