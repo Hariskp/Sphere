@@ -7,9 +7,10 @@ import Weather from "./pages/Weather.jsx";
 
 import Warning from "./pages/Warning.jsx";
 import Homepage from "./pages/Homepage.jsx";
+import Homepages from "./components/home/Homepages.jsx";
+import Blog from "./pages/Blog.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Blog from "./pages/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,13 +23,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/Warning",
-    element: <Warning/>
+    element: <Warning />,
   },
   {
     path: "/Blog",
-    element: <Blog/>
+    element: <Blog />,
   },
-  
+  {
+    path: "/News",
+    element: <Homepages />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
