@@ -11,6 +11,7 @@ import Homepages from "./components/home/Homepages.jsx";
 import Blog from "./pages/Blog.jsx";
 import About from "./pages/About.jsx";
 import SinglePage from "./components/singlePage/SinglePage.jsx";
+import WriteBlog from "./pages/WriteBlog.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     element: <Blog />,
   },
   {
+    path: "/writeblog",
+    element: <WriteBlog />,
+  },
+  {
     path: "/News",
     element: <Homepages />,
   },
@@ -41,7 +46,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/singlepage/:id",
-    element: <SinglePage/>,
+    element: <SinglePage />,
   },
 ]);
 

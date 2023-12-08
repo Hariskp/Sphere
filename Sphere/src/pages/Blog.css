@@ -60,44 +60,6 @@ Blog.css * {
   opacity: 0.6;
 }
 
-.blog-content {
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-}
-
-.blog-content-header {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.blog-content-header h1 {
-  margin: 1rem auto;
-  font-size: 60px;
-}
-
-.write-blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.write-b {
-  color: black;
-  font-size: 18px;
-  padding: 15px;
-  display: block;
-  width: 420px;
-  height: 40px;
-  border: none;
-  outline: none;
-  appearance: none;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
 .writeblog {
   color: #fff;
   padding: 12px 12px;
@@ -106,12 +68,17 @@ Blog.css * {
   border: 0px;
   background-color: transparent;
   position: relative;
-  margin: 20px;
   transition: all 0.25s ease;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
     0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .writeblog:hover {
@@ -155,4 +122,62 @@ Blog.css * {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.blog-anmew-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.blog-anmew-content .containermew {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-anmew-content .text {
+  font-size: 6rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.blog-anmew-content input {
+  width: 79%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.blog-grid .content {
+  background: white;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-out 0.2s;
+}
+.blog-grid .content:hover {
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 16px 30px;
+  transform: translateY(-5px);
+}
+
+.blog-grid .content span {
+  font-weight: bold;
+}
+.blog-grid .content .mb-1 {
+  margin-bottom: 0.4rem;
+}
+.blog-grid .content .mb-2 {
+  margin-bottom: 1rem;
+}
+
+.blog-grid .content img {
+  width: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
 }

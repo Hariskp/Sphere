@@ -25,8 +25,14 @@ app.get("/getall", (req, res) => {
 });
 // create สร้างข้อมูล
 app.post("/create", (req, res) => {
-  const { title, content, image } = req.body;
-  Blog.create({ blogID: uuidv4(), title: title, content, image }).then(() => {
+  const { title, author, content, image } = req.body;
+  Blog.create({
+    blogID: uuidv4(),
+    title: title,
+    author: author,
+    content: content,
+    image,
+  }).then(() => {
     res.send("สร้างสำเร็จ");
   });
 });

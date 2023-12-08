@@ -1,11 +1,25 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import "./Blog.css";
 import blogbg from "../img/blog_bg.jpg";
 import icon from "../img/icon_rainy.png";
 import icon_pencil from "../img/icon_pencil.png";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
+  const [blog, setBlog] = useState([]);
+
+  const fetchAPI = () => {
+    axios.get("http://localhost:8080/getall").then((result) => {
+      setBlog(result.data);
+    });
+  };
+
+  useEffect(() => {
+    fetchAPI();
+  }, []);
+
   return (
     <>
       <Header />
@@ -27,17 +41,32 @@ const Blog = () => {
       </div>
 
       {/* Blog Content */}
-      <div className="blog-content">
-        <div className="blog-content-header">
-          <h1>Blog</h1>
-          <div className="write-blog">
-            <input
-              type="text"
-              placeholder="Write Blog Here..."
-              className="write-b"
-            />
-            <button className="writeblog">Write Blog</button>
-          </div>
+      <div className="blog-anmew-content">
+        <h1 className="text">Blog</h1>
+        <div className="containermew">
+          <input type="text" placeholder="search..." />
+          <Link to={"/writeblog"} className="writeblog">
+            Write Blog
+          </Link>
+        </div>
+        <div className="blog-grid">
+          {blog.map((item) => (
+            <div key={item.blogID} className="content">
+              <img
+                src={item.image}
+                alt="image"
+                className="mb-2"
+                style={{ height: "200px" }}
+              />
+              <p className="mb-1">
+                <span>Author </span> : {item.author}
+              </p>
+              <p className="mb-1">
+                <span>Topic </span> : {item.title}
+              </p>
+              <p>{item.content.slice(0, 40)}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>
