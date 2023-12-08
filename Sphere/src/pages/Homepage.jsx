@@ -92,10 +92,10 @@ function Homepage() {
                     </div>       
             </div>
         </div>
-        <div className="recent-warning-column">
-            <div className="recent-warning-header">
+        <div className="recent-warning-header">
                 <h1>RECENT WARNING</h1>
             </div>
+        <div className="recent-warning-column">
             <div className="recent-warning-news">
                 <div className="container-background-color">
                 <img src={chmeq} alt="ChiangMai_eq" />

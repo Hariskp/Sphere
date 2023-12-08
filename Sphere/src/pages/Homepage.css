@@ -314,7 +314,7 @@
 .recent-warning-column {
   display: flex;
   flex-direction: column;
-  margin-top: rem;
+  margin-top: 2rem;
   align-items: center;
 }
 
@@ -322,7 +322,9 @@
   font-size: 40px;
   font-family: 'Kanit', sans-serif;
   margin-bottom: 2rem;
-  align-items: left;
+  align-items: center;
+  margin-left: 22rem;
+  margin-top: 2rem;
 }
 
 
