@@ -1,4 +1,4 @@
-* {
+Homepage.css * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,17 +7,30 @@
 
 .homepage {
   display: grid;
+  grid-template-columns: 60% 40%;
+  background-image: url(../img/strom.webp);
+}
+
+.homepage-sunny {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-image: url(../img/sunny_sky.png);
+}
+
+.homepage-clear {
+  display: grid;
   grid-template-columns: 65% 35%;
-  height: 250px;
+  background-image: url(../img/clear_sky.png);
 }
 
 .search-container {
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
-  padding-top: 75px;
-  padding-left: 400px;
+  padding-top: 90px;
+  padding-left: 300px;
   font-style: italic;
+  height: 280px;
 }
 
 .search-container p {
@@ -37,26 +50,27 @@
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   font-style: italic;
+  opacity: 0.5;
 }
 
 .right-info {
   color: #ffffff;
   display: grid;
-  grid-template-rows: 50px 110px 50px;
+  grid-template-rows: 80px 110px 50px;
 }
 
 .right-info .date {
   font-size: 20px;
   display: flex;
-  justify-content: center;
-  padding: 45px;
+  justify-content: left;
+  margin: 3rem 5rem;
 }
 
 .right-info .temp {
   font-size: 100px;
   font-weight: bolder;
   display: flex;
-  justify-content: center;
+  margin: 0 2rem;
 }
 
 .temp img {
@@ -67,14 +81,15 @@
 .right-info .location {
   font-size: 20px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
 }
 
 .header-logo {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 .header-logo h4 {
@@ -84,9 +99,9 @@
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 60px;
   font-size: 20px;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 .sphere-blog p {
@@ -99,8 +114,14 @@
   text-shadow: 1px 1px 2px white;
 }
 
+.img-whatssphere {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
 .img-whatssphere img {
-  width: 600px;
+  width: 580px;
   border-radius: 10px;
   display: block;
   border: none;
@@ -110,7 +131,7 @@
 }
 
 .weathernews-content {
-  width: 1500px;
+  width: 1350px;
   margin: 3rem auto;
   height: 350px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
@@ -130,7 +151,7 @@
   border-radius: 10px;
   position: relative;
   top: 50px;
-  left: 70px;
+  left: 60px;
 }
 
 .sevdays-forecast img {
@@ -141,7 +162,7 @@
 .weather-news {
   color: #ffffff;
   display: block;
-  margin: 3rem 3rem 3rem auto;
+  margin: 3rem 2rem;
 }
 
 .news-dots {
@@ -167,7 +188,7 @@
 .recent-logo {
   display: flex;
   align-items: center;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-top: 10px;
 }
 
@@ -177,7 +198,7 @@
 }
 
 .recent-warning {
-  width: 1500px;
+  width: 1350px;
   margin: 2rem auto 3rem;
   height: 350px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -189,14 +210,14 @@
 }
 
 .recent-warning img {
-  width: 700px;
+  width: 680px;
   height: 350px;
   border-radius: 10px;
 }
 
 .chm-news {
   display: block;
-  margin: 2rem 3rem 3rem auto;
+  margin: 3rem 2rem;
 }
 
 .chm-news h1 {
@@ -232,7 +253,7 @@
 .blogs {
   width: auto;
   margin: auto;
-  height: 410px;
+  height: 380px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px 10px 0 0;
   background-color: #1c1e26;
@@ -247,7 +268,7 @@
   padding-bottom: 10px;
 }
 
-.blog-content {
+.blog-content-home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
@@ -256,7 +277,7 @@
   margin: auto;
 }
 
-.blog-content img {
+.blog-content-home img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -280,4 +301,38 @@
   width: auto;
   padding: 10px;
   top: -54px;
+}
+
+@media screen and (max-width: 762px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-image: url(../img/strom.webp);
+  }
+
+  .search-container {
+    margin: 0;
+    padding: 20px 0 150px 80px;
+  }
+
+  .search p {
+    padding: 145px 10px 13px 10px;
+    font-size: 20px;
+  }
+
+  .search-bar {
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    width: 310px;
+    height: 40px;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    opacity: 0.5;
+  }
 }

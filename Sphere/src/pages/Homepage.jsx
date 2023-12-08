@@ -1,3 +1,4 @@
+Homepage.jsx;
 import React from "react";
 import "./Homepage.css";
 import image from "../img/strom.webp";
@@ -11,13 +12,10 @@ import chmeq from "../img/ChiangMai_eq.jpg";
 import blog from "../img/blog.png";
 
 function Homepage() {
-  const backgroundStyle = {
-    backgroundImage: `url(${image})`,
-  };
   return (
     <>
       <Header />
-      <div className="homepage" style={backgroundStyle}>
+      <div className="homepage">
         <div className="search-container">
           <div className="search">
             <p>FIND THE WEATHER YOU WANT</p>
@@ -86,18 +84,16 @@ function Homepage() {
           <div className="weather-news">
             <h1>Weather News</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              nesciunt maiores, nam nihil, nobis impedit quam quas temporibus
-              saepe nostrum ullam, molestias iste quae sed vero totam dolorum
-              cum voluptas illo consequatur odit! Quo, sapiente error. Nihil
-              animi enim impedit laborum, quasi dicta illum nostrum rem nisi
-              amet cum accusamus ullam iusto beatae blanditiis deserunt
-              provident aliquid molestiae assumenda pariatur eaque quae,
-              quibusdam veritatis. Tenetur neque, dolore quis blanditiis odit
-              eligendi at ipsam non dicta vero cumque voluptates. Dolorem,
-              perferendis asperiores. Reiciendis a velit asperiores cumque
-              consequatur architecto, qui inventore assumenda modi alias
-              aspernatur vel corrupti ex culpa beatae aperiam?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ratione dolore, sit cumque maxime facere dignissimos quod,
+              perspiciatis ullam eius, quam accusantium. Id esse laboriosam
+              doloribus facere asperiores? Doloremque perferendis aliquam
+              inventore sit iste unde eum fugit illum laudantium, ipsa quam
+              neque eveniet? Tempora quasi vel blanditiis natus! Veritatis,
+              inventore placeat hic corporis tempora, impedit quia
+              necessitatibus in nostrum magnam possimus nobis et temporibus, sit
+              delectus illum sapiente magni mollitia. Voluptatibus sit, nesciunt
+              inventore iusto nostrum vitae ducimus eligendi molestiae?
             </p>
           </div>
           <div className="news-dots">
@@ -145,7 +141,7 @@ function Homepage() {
         {/* Blog */}
         <div className="blogs">
           <h1>BLOG</h1>
-          <div className="blog-content">
+          <div className="blog-content-home">
             <div className="first-blog">
               <img src={blog} alt="blog" />
               <div className="tag-1">
