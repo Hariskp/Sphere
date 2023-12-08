@@ -8,6 +8,12 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
+  //use date
+  const dataBuild = (d) => {
+    let date = String(new window.Date());
+    date = date.slice(0, 15);
+    return date;
+  };
   const [blog, setBlog] = useState([]);
 
   const fetchAPI = () => {
@@ -25,7 +31,7 @@ const Blog = () => {
       <Header />
       <div className="blog-header">
         {/* Blog Header */}
-        <div className="blog-date">Fri 2 Dec 23</div>
+        <div className="blog-date">{dataBuild(new Date())}</div>
         <div className="blog-temp">
           30°
           <img src={icon} alt="icon" />
