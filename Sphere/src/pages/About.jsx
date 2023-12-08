@@ -6,10 +6,12 @@ import Jom from "../img/jom.jpg";
 import First from "../img/first.jpg";
 
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const About = () => {
   return (
     <>
+      <Header />
       <div className="Hero-banner-about">
         <div className="box-sphere-about">
           <div className="font-header-about">
