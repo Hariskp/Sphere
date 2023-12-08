@@ -26,25 +26,50 @@ function Warning() {
             placeholder="Searching here..."
           />
         </div>
+        
+        
+          
+        {/* <iframe
+        src="https://flood.gistda.or.th/"
+        frameborder="100"
+        style={{ width: "100%", height: "800px" }}
+      ></iframe> */}
         <div className="recent-font">
-          <h1>Recent Warning</h1>
+          <h1>Weather warning</h1>
         </div>
-        <div className="recent-container"></div>
-        <div className="old-container">
-          <div className="header-recent">
-            <h1>Warning</h1>
-          </div>
-          <div className="column-2">
-            <div className="item1"></div>
-            <div className="item2"></div>
-            <div className="item3"></div>
-          </div>
-          <div className="column-3">
-            <div className="item4"></div>
-            <div className="item5"></div>
-            <div className="item6"></div>
-          </div>
+        {<iframe
+        src="https://embed.windy.com/embed2.html?lat=15.072&lon=97.427&detailLat=13.805&detailLon=100.675&width=1480&height=800&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+        frameborder="0"
+        style={{ width: "100%", height: "815px" }}
+      ></iframe>}
+        <br/>
+        <br/>
+        
+
+        <div className="recent-font">
+          <h1>Disaster warning map</h1>
         </div>
+        {<iframe
+        src="https://ews.dwr.go.th/ews/index.php"
+        frameborder="0"
+        style={{ width: "100%", height: "815px" }}
+      ></iframe>}
+        <br/>
+        <br/>
+        
+
+        <div className="recent-font">
+          <h1>Disaster warning</h1>
+        </div>
+        {<iframe
+        src="https://tdaweb.disaster.go.th/tda/AlertHome?fbclid=IwAR01jGBoDzxBVhVNEIr1MpevaP3GkEgLDN8bPasqqcXPGiGxxHn7sNPXN6g"
+        frameborder="0"
+        style={{ width: "100%", height: "815px" }}
+      ></iframe>}
+        <br/>
+        <br/>
+        
+        
       </div>
       <Footer />
     </>
