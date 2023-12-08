@@ -1,5 +1,5 @@
 .warning-page {
-  background-color: #e1e1e1;
+  background-color: black;
 }
 
 .banner-api {
@@ -298,3 +298,114 @@ textarea {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+
+.weather-warning-api {
+  position:absolute;
+  top: 1470px;
+  left: 200px;
+  height: 700px;
+  width: 1500px;
+  align-items: center;
+}
+
+.weather-warning-api-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.div-about-weather-api {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-about-weather-api h1 {
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-about-weather-api p {
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+width: 800px;
+}
+
+.image-weather-api img {
+  align-items: right;
+  height: 700px;
+  width: 500px;
+  margin-left: 7rem;
+}
+
+.weather-warning-api-container {
+  background-color: #1c1e26;
+  border-radius: 40px;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1700px;
+}
+
+
+.disaster-warning-api {
+  position:absolute;
+  top: 3175px;
+  left: 200px;
+  height: 700px;
+  width: 1500px;
+  align-items: center;
+}
+
+
+.disaster-warning-api-container {
+  background-color: #1c1e26;
+  border-radius: 40px;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1700px;
+}
+
+.disaster-warning-api-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-about-disaster-api p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  width: 800px;
+  }
+
+.div-about-disaster-api h1 {
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+ .div-about-disaster-api {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+} 
+
+.image-disaster-api img {
+  align-items: right;
+  height: 700px;
+  width: 500px;
+  margin-left: 7rem;
+}
+
+.text-about-disaster-api {
+  margin-left: 7rem;
+}
+
