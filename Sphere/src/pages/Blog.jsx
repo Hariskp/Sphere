@@ -18,7 +18,7 @@ const Blog = () => {
 
   useEffect(() => {
     fetchAPI();
-  });
+  }, []);
 
   return (
     <>
