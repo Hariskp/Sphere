@@ -9,7 +9,7 @@ main .container {
   width: 23%;
 }
 .sideContent .heading h6 {
-  background-color: #000;
+  background-color: #663399;
 }
 @media screen and (max-width: 768px) {
   main .container {
