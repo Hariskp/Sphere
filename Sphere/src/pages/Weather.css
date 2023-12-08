@@ -34,7 +34,7 @@
   color: white;
 }
 
-.date {
+.date-weather {
   font-size: 30px;
   justify-content: center;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
@@ -55,7 +55,7 @@
   text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
 }
 
-.location {
+.location-weather {
   font-size: 25px;
   justify-content: center;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
@@ -68,7 +68,7 @@
   background-color: white;
 }
 
-.map {
+.map-weather {
   display: flex;
   border-radius: 5%;
   border: 0;

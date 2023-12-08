@@ -28,7 +28,7 @@ function Homepage() {
         </div>
         <div className="right-info">
           <div className="date">Fri 2 Dec 23</div>
-          <div className="temp">
+          <div className="temp-homepage">
             27°
             <img src={icon} alt="icon" />
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Warning.css";
 import BannerImage from "../img/banner-warning.jpg";
+import icon from "../img/icon_rainy.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -11,6 +12,14 @@ function Warning() {
       <div className="warning-page">
         <div className="banner-bg">
           <img src={BannerImage} alt="banner" />
+          <div className="warning-info">
+            <div className="date-warn">Fri 2 Dec 23</div>
+            <div className="temp-warn">
+              27°
+              <img src={icon} alt="icon" />
+            </div>
+            <div className="location-warn">Bangkok, Thailand</div>
+          </div>
           <input
             className="search-warn"
             type="text"

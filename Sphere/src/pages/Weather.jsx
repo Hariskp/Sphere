@@ -51,17 +51,17 @@ const Weather = () => {
           <div className="anmewza-container">
             <div className="weather-container">
               <div className="temperature-container">
-                <div className="date">{dataBuild(new Date())}</div>
+                <div className="date-weather">{dataBuild(new Date())}</div>
                 <div className="container-temp">
                   <div className="temperature">30˚</div>
                   <div className="img-temp">
                     <img src={icosun} alt="sun" />
                   </div>
                 </div>
-                <div className="location">Bangkok, Thailand</div>
+                <div className="location-weather">Bangkok, Thailand</div>
               </div>
               <div className="map-container">
-                <div className="map">
+                <div className="map-weather">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.637133811969!2d100.61278967516442!3d14.039510686383029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1701759051680!5m2!1sth!2sth"
                     width="500"

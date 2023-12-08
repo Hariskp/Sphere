@@ -66,14 +66,14 @@ Homepage.css * {
   margin: 3rem 5rem;
 }
 
-.right-info .temp {
+.right-info .temp-homepage {
   font-size: 100px;
   font-weight: bolder;
   display: flex;
   margin: 0 2rem;
 }
 
-.temp img {
+.temp-homepage img {
   width: auto;
   height: auto;
 }
