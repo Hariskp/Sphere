@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import keys from "../keys.js";
 import "./Weather.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import icoeye from "../img/ico/ico-eye.png";
 import icosun from "../img/ico/ico-sun.png";
+import axios from "axios";
+
+const api = {
+  key: keys.API_KEY,
+  base: keys.BASE_URL,
+};
 
 const Weather = () => {
   const dataBuild = (d) => {
     let date = String(new window.Date());
     date = date.slice(0, 15);
     return date;
+  };
+
+  const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState({});
+  const search = (e) => {
+    if (e.key === "Enter") {
+      fetch(`${api.base}weather?q=${query}&units=metric&appid=${api.key}`)
+        .then((res) => res.json())
+        .then((results) => {
+          setQuery("");
+          setWeather(results);
+          console.log(results);
+        });
+    }
   };
 
   return (
@@ -23,12 +43,15 @@ const Weather = () => {
               type="text"
               placeholder="Searching here..."
               className="search-bar-weather"
+              onChange={(e) => setQuery(e.target.value)}
+              value={query}
+              onKeyPress={search}
             />
           </div>
           <div className="anmewza-container">
             <div className="weather-container">
               <div className="temperature-container">
-                <div className="date">Fri 2 Dec 2023</div>
+                <div className="date">{dataBuild(new Date())}</div>
                 <div className="container-temp">
                   <div className="temperature">30˚</div>
                   <div className="img-temp">
