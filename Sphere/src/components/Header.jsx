@@ -1,44 +1,44 @@
-import React, { useState } from 'react'
-import { FiMoon,FiX,FiMenu} from "react-icons/fi";
-import './Header.css'
-
-
+import React from "react";
+import "./Header.css";
+import logo from "../img/Spherelogo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
-
-    const [click , setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    const closeMenu = () => setClick(false);
-
-    return (
-        <div className="header">
-            <div className="container">
-                <div className="header-con">
-                    <div className="logo-container">
-                        <a href='#'>SPHERE <FiMoon/></a>
-                    </div>
-                    <ul className='menu'>
-                        <li className='menu-link'>
-                            <a href='#'>ABOUT</a>
-                        </li>
-                        <li className='menu-link'>
-                            <a href='#'>CONTACT</a>
-                        </li>
-                        <li className='menu-link'>
-                            <a href='#'>TEAM</a>
-                        </li>
-                    </ul>
-                    <div className="mobile-menu" onClick={handleClick}>
-                            {click ? (
-                                <FiX/>
-                            ) : (
-                                <FiMenu/>
-                            )}
-                    </div>
-                </div>
+  return (
+    <>
+      <nav>
+        <div className="navbar">
+          <div className="nav-con">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+              <h4>SPHERE</h4>
+              <p>Weather forecast website</p>
             </div>
+            <ul class="menu">
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/Weather"}>Weatherforecast</Link>
+              </li>
+              <li>
+                <Link to={"/Warning"}>Warning</Link>
+              </li>
+              <li>
+                <Link to={"/News"}>News</Link>
+              </li>
+              <li>
+                <Link to={"/Blog"}>Blog</Link>
+              </li>
+              <li>
+                <Link to={"/Aboutus"}>About us</Link>
+              </li>
+            </ul>
+          </div>
         </div>
-     )
+      </nav>
+    </>
+  );
 }
 
-export default Header
+export default Header;

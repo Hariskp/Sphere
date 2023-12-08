@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Article from "./components/Article";
 import Footer from "./components/Footer";
 import keys from "./keys";
 import "./App.css";
@@ -19,7 +18,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {/* <Header /> */}
+        <Header />
         <main>
           <div className="search-container">
             <input type="text" placeholder="Search..." className="search-bar" />
@@ -37,7 +36,7 @@ function App() {
           </div>
         </main>
       </div>
-      <Article />
+      <Footer />
     </>
   );
 }
