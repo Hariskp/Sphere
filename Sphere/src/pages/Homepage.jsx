@@ -1,6 +1,5 @@
 import React from 'react';
 import './Homepage.css'
-import image from '../img/strom.webp'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import raindrop from '../img/raindrop.png'
@@ -9,14 +8,39 @@ import map from '../img/map.png'
 import sphere from '../img/weather_hero.png'
 import mobileapp from '../img/mobileapp.svg'
 import chmeq from '../img/ChiangMai_eq.jpg'
+import icon from "../img/icon_rainy.png";
+import blog from "../img/blog.png";
+import sevdays from "../img/7daysforecast.png";
 
 function Homepage() {
-    const backgroundStyle = {
-        backgroundImage: `url(${image})`,};
+    const dataBuild = (d) => {
+        let date = String(new window.Date());
+        date = date.slice(0, 15);
+        return date;
+      };
     return (
         <>
         <Header />
-
+        <div className="homepage">
+        <div className="search-container">
+          <div className="search">
+            <p>FIND THE WEATHER YOU WANT</p>
+          </div>
+          <input
+            type="text"
+            placeholder="→ Searching here...."
+            className="search-bar"
+          />
+        </div>
+        <div className="right-info">
+          <div className="date">{dataBuild(new Date())}</div>
+          <div className="temp-homepage">
+            27°
+            <img src={icon} alt="icon" />
+          </div>
+          <div className="location">Bangkok, Thailand</div>
+        </div>
+      </div>
         {/* Information-Box-Homepage */}
         <div className="three-box-container">
         <div className="box-home">
@@ -88,6 +112,62 @@ function Homepage() {
           <span className="recents-dot"></span>
           <span className="recents-dot"></span>
           <span className="recents-dot"></span>
+        </div>
+        
+        <div className="weathernews-column">
+        <div className="weathernews-content">
+          <div className="sevdays-forecast">
+            <img src={sevdays} alt="7days-forecast" />
+          </div>
+        <div className="weather-news">
+            <h2>Weather news</h2>
+            <p>
+            During 9 - 11 Dec. 2023, the high pressure area or moderate cold air mass covers the upper northern region. and northeastern region and the South China Sea will weaken. In addition, there is an easterly wind that brings moisture to cover the northern region. Northeastern, Central and Eastern regions This characteristic causes temperatures in upper Thailand to rise 1 - 3 degrees Celsius with fog in the morning.
+            </p>
+          </div>
+        </div>
+          <div className="news-dots">
+            <span className="news-dot"></span>
+            <span className="news-dot"></span>
+            <span className="news-dot"></span>
+          </div>
+        </div>
+        
+        {/* Blog */}
+        <div className="blogs">
+          <h1>BLOG</h1>
+          <div className="blog-content-home">
+            <div className="first-blog">
+              <img src={blog} alt="blog" />
+              <div className="tag-1">
+                5 Way to save your health when weather change.
+              </div>
+            </div>
+            <div className="second-blog">
+              <img src={blog} alt="blog" />
+              <div className="tag-2">
+                5 Way to save your health when weather change.
+              </div>
+            </div>
+            <div className="third-blog">
+              <img src={blog} alt="blog" />
+              <div className="tag-3">
+                5 Way to save your health when weather change.
+              </div>
+            </div>
+            <div className="fourth-blog">
+              <img src={blog} alt="blog" />
+              <div className="tag-4">
+                5 Way to save your health when weather change.
+              </div>
+            </div>
+            <div className="fifth-blog">
+              <img src={blog} alt="blog" />
+              <div className="tag-5">
+                5 Way to save your health when weather change.
+              </div>
+            </div>
+            </div>
         </div>
         <Footer />
         </>
