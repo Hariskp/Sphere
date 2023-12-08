@@ -10,6 +10,7 @@ import Homepage from "./pages/Homepage.jsx";
 import Homepages from "./components/home/Homepages.jsx";
 import Blog from "./pages/Blog.jsx";
 import About from "./pages/About.jsx";
+import SinglePage from "./components/singlePage/SinglePage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/Aboutus",
     element: <About />,
+  },
+  {
+    path: "/singlepage/:id",
+    element: <SinglePage/>,
   },
 ]);
 

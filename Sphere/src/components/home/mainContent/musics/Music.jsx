@@ -2,7 +2,7 @@ import React from "react";
 import "./music.css";
 import Slider from "react-slick";
 import Heading from "../../../common/heading/Heading";
-import { popular } from "../../../../dummyData";
+import { disaster } from "../../../../dummyData";
 
 const Music = () => {
   const settings = {
@@ -21,8 +21,8 @@ const Music = () => {
         <Heading title="Disaster" />
         <div className="content">
           <Slider {...settings}>
-            {popular
-              .filter((val) => val.catgeory === "weather")
+            {disaster
+              .filter((val) => val.catgeory === "disaster")
               .map((val) => {
                 return (
                   <div className="items">
@@ -36,10 +36,19 @@ const Music = () => {
                         </div>
                       </div>
                       <div className="text">
-                        <h1 className="title">{val.title.slice(0, 40)}...</h1>
+                        <h1 className="title">{val.title.slice(0, 80)}...</h1>
+                        <p>{val.desc.slice(0, 230)}</p>
                         <div className="date">
                           <i class="fas fa-calendar-days"></i>
                           <label>{val.date}</label>
+                          <button
+                          className="firstlnwza"
+                          onClick={() => {
+                            window.open(`${val.link}`);
+                          }}
+                        >
+                          Read More
+                        </button>
                         </div>
                       </div>
                     </div>

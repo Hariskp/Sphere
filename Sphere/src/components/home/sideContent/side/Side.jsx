@@ -1,7 +1,7 @@
 import React from "react";
 import "./side.css";
 import Slider from "react-slick";
-// import Heading from "../../../common/heading/Heading"
+import Heading from "../../../common/heading/Heading"
 import { gallery } from "../../../../dummyData";
 import Tpost from "../Tpost/Tpost";
 import SocialMedia from "../social/SocialMedia";
@@ -19,21 +19,21 @@ const Side = () => {
   };
 
   const catgeory = [
-    "world",
-    "travel",
-    "sport",
-    "fun",
+    "weather",
+    "disaster",
+    "environment",
+    "warning",
     "health",
-    "fashion",
-    "business",
+    "gallery",
+    "foreign",
     "technology",
   ];
   return (
     <>
-      {/* <Heading title='Stay Connected' /> */}
+      <Heading title='Stay Connected' />
       <SocialMedia />
 
-      {/* <Heading title='Subscribe' /> */}
+      <Heading title='Subscribe' />
 
       <section className="subscribe">
         <h1 className="title">Subscribe to our New Stories</h1>
@@ -45,14 +45,16 @@ const Side = () => {
         </form>
       </section>
 
-      <section className="banner">
-        <img src="./images/sidebar-banner-new.jpg" alt="" />
+      <br/>
+      <section className="bannerlnwza">
+        <img src="./images/banner sphere.png" alt="" />
       </section>
+      <br/>
 
       <Tpost />
 
       <section className="catgorys">
-        {/* <Heading title="Catgeorys" /> */}
+        <Heading title="Catgeorys" />
         {/*<div className='items'>{allCat}</div>*/}
         {catgeory.map((val) => {
           return (
@@ -64,12 +66,12 @@ const Side = () => {
       </section>
 
       <section className="gallery">
-        {/* <Heading title="Gallery" /> */}
+        <Heading title="Gallery" />
         <Slider {...settings}>
           {gallery.map((val) => {
             return (
               <div className="img">
-                <img src={val.cover} alt="" />
+                <img src={val.cover} alt=""/>
               </div>
             );
           })}

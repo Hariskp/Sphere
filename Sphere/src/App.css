@@ -190,10 +190,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #fb4c35;
+  border-left: 5px solid #663399;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #fb4c35 50%, black 50%);
+  background: linear-gradient(to right, #663399 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -218,7 +218,7 @@ a {
 .comment i,
 .date i {
   width: 30px;
-  color: #fb4c35;
+  color:#663399;
   font-size: 13px;
 }
 
