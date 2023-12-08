@@ -12,6 +12,8 @@ const api = {
   base: keys.BASE_URL,
   find: keys.FIND_L,
   weath: keys.WEATHER,
+  airp: keys.AIR_POLL,
+  key2: keys.API_KEY_2,
 };
 
 const Weather = () => {
@@ -25,6 +27,7 @@ const Weather = () => {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState({});
   const [weather, setWeather] = useState({});
+  const [airpoll, setAirpoll] = useState({});
 
   // Convert Kelvin to Celsius
   const [celsiusT, setCelsiusT] = useState("");
@@ -53,21 +56,48 @@ const Weather = () => {
     visibilityStatus = "Bad";
   }
 
+  // Latitude & Lontitude
+  const latti = weather.coord && weather.coord.lat;
+  const longti = weather.coord && weather.coord.long;
+  //Sunrise
+  const sunriseTs = weather.sys && weather.sys.sunrise;
+  const srdate = new Date(sunriseTs * 1000); // Change Unix to millisecond
+  const sunrise = srdate.toLocaleString("en-US", {
+    timeZone: "Asia/Bangkok",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+  });
+
+  //Sunset
+  const sunsetTs = weather.sys && weather.sys.sunset;
+  const ssdate = new Date(sunsetTs * 1000); // Change Unix to millisecond
+  const sunset = ssdate.toLocaleString("en-US", {
+    timeZone: "Asia/Bangkok",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+  });
+
   const search = (e) => {
     if (e.key === "Enter") {
-      // fetch(`${api.find}direct?q=${query}&limit=5&appid=${api.key}`)
-      //   .then((res) => res.json())
-      //   .then((results) => {
-      //     setQuery("");
-      //     setLocation(results);
-      //     console.log(results);
-      //   });
       fetch(`${api.weath}weather?q=${query}&appid=${api.key}`)
         .then((res) => res.json())
         .then((results) => {
-          setQuery("");
           setWeather(results);
           console.log(results);
+          //   // เมื่อ fetch แรกเสร็จสิ้น ก็ทำ fetch ที่สอง
+          //   return fetch(
+          //     `${api.airp}air_pollution?lat=${results.coord.lat}&lon=${results.coord.lon}&appid=${api.key}`
+          //   );
+          // })
+          // .then((res2) => res2.json())
+          // .then((results2) => {
+          //   setAirpoll(results2);
+          //   console.log(results2);
+          // })
+          // .catch((error) => {
+          //   console.error("Error:", error);
         });
     }
   };
@@ -141,17 +171,24 @@ const Weather = () => {
                   </div>
                   <div className="container-sunrise">
                     <div className="sunrise">Sunrise</div>
-                    <div className="sunrise-time">06:26</div>
+                    <div className="sunrise-time">{sunrise}</div>
                   </div>
                   <div className="container-sunset">
                     <div className="sunset">Sunset</div>
-                    <div className="sunset-time">17:28</div>
+                    <div className="sunset-time">{sunset}</div>
                   </div>
                   <div className="container-air-pollution">
                     <div className="air-pollution">Air Pollution</div>
                     <div className="air-pollution-rate">Good</div>
                     <div className="pm">PM2.5</div>
-                    <div className="pm-rate">73</div>
+                    <div className="pm-rate">
+                      {airpoll &&
+                        airpoll.list &&
+                        airpoll.list[0] &&
+                        airpoll.list[0].components && (
+                          <div>{airpoll.list[0].components.pm2_5}</div>
+                        )}
+                    </div>
                   </div>
                 </div>
                 <div className="visibility-container">
