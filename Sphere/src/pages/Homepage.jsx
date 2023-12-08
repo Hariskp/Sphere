@@ -8,6 +8,7 @@ import api from '../img/api.png'
 import map from '../img/map.png'
 import sphere from '../img/weather_hero.png'
 import mobileapp from '../img/mobileapp.svg'
+import chmeq from '../img/ChiangMai_eq.jpg'
 
 function Homepage() {
     const backgroundStyle = {
@@ -66,6 +67,27 @@ function Homepage() {
                     <button type='learnmore'>Learn more</button>
                     </div>       
             </div>
+        </div>
+        <div className="recent-warning-column">
+            <div className="recent-warning-header">
+                <h1>RECENT WARNING</h1>
+            </div>
+            <div className="recent-warning-news">
+                <div className="container-background-color">
+                <img src={chmeq} alt="ChiangMai_eq" />
+                <div className="chm-news">
+                    <h2>Chiangmai earthquake</h2>
+                    <p>The Earthquake Surveillance Division will be established on March 13, 2023. At 4:59 p.m., the Meteorological Department recorded a magnitude 2.1 earthquake at a depth of 2 km in the San Sai Subdistrict, Phrao District, Chiang Mai Province. Initially, no reports of impacts from the region have been received. If further information becomes available, we will notify you.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div className="recents-dots">
+          <span className="recents-dot"></span>
+          <span className="recents-dot"></span>
+          <span className="recents-dot"></span>
+          <span className="recents-dot"></span>
+          <span className="recents-dot"></span>
         </div>
         <Footer />
         </>
