@@ -31,7 +31,7 @@ function Header() {
                 <Link to={"/Blog"}>Blog</Link>
               </li>
               <li>
-                <a href="">About us</a>
+                <Link to={"/Aboutus"}>About us</Link>
               </li>
             </ul>
           </div>
