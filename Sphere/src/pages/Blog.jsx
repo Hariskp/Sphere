@@ -68,15 +68,6 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="blog-container">
-          {blog.map((item) => (
-            <div key={item.blogID}>
-              <img src={item.image} alt="" style={{ width: "40%" }} />
-              <h2>{item.title}</h2>
-              <p>{item.content}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </>
   );
