@@ -2,10 +2,8 @@ import Header from "../components/Header";
 import "./Writeblog.css";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const WriteBlog = () => {
-  const navigate = useNavigate();
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
