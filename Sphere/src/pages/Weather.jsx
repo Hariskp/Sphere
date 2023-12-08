@@ -28,13 +28,30 @@ const Weather = () => {
 
   // Convert Kelvin to Celsius
   const [celsiusT, setCelsiusT] = useState("");
+  // Convert Meter to Kilometer
+  const [metertoKm, setmetertoKm] = useState("");
   useEffect(() => {
     const celsiusTemp = weather.main && weather.main.temp - 273.15;
     const roundedCel = Math.floor(celsiusTemp);
     setCelsiusT(roundedCel);
+
+    const kiloMeter = weather.visibility * 0.001;
+    const roundedKm = Math.floor(kiloMeter);
+    setmetertoKm(roundedKm);
   });
 
-  //U
+  //Visibilitystatus condition
+  let visibilityStatus = "";
+
+  if (metertoKm > 10) {
+    visibilityStatus = "Perfect";
+  } else if (metertoKm >= 4 && metertoKm <= 10) {
+    visibilityStatus = "Good";
+  } else if (metertoKm >= 1 && metertoKm < 4) {
+    visibilityStatus = "Normal";
+  } else {
+    visibilityStatus = "Bad";
+  }
 
   const search = (e) => {
     if (e.key === "Enter") {
@@ -98,21 +115,28 @@ const Weather = () => {
                     ></iframe>
                   </div>
                 </div>
-                <div className="uv-container">
-                  <div className="uv-index">
-                    <h3>UV Index</h3>
+                <div className="cloud-container">
+                  <div className="cloud">
+                    <h3>Cloud</h3>
                   </div>
                   <div className="container-uv">
-                    <div className="uv">3</div>
-                    <div className="uv-rate">Low</div>
+                    <div className="cloud-info">
+                      {weather && weather.weather && (
+                        <div>{weather.weather[0].description}</div>
+                      )}
+                    </div>
                   </div>
                   <div className="humidity">Humidity</div>
-                  <div className="humidity-rate">84%</div>
+                  <div className="humidity-rate">
+                    {weather.main && weather.main.humidity}%
+                  </div>
                 </div>
                 <div className="wind-status-container">
                   <div className="wind-status">WIND STATUS</div>
                   <div className="container-wind-status">
-                    <div className="wind">3</div>
+                    <div className="wind">
+                      {weather.wind && weather.wind.speed}
+                    </div>
                     <div className="unit">KM/H</div>
                   </div>
                   <div className="container-sunrise">
@@ -138,9 +162,9 @@ const Weather = () => {
                         <img src={icoeye} alt="visibility" />
                       </div>
                     </div>
-                    <div className="visibility-range">27</div>
+                    <div className="visibility-range">{metertoKm}</div>
                     <div className="visibility-unit">km</div>
-                    <div className="visibility-rate">Perfectly clear view.</div>
+                    <div className="visibility-rate">{visibilityStatus}</div>
                   </div>
                 </div>
               </div>
