@@ -12,6 +12,11 @@ import chmeq from "../img/ChiangMai_eq.jpg";
 import blog from "../img/blog.png";
 
 function Homepage() {
+  const dataBuild = (d) => {
+    let date = String(new window.Date());
+    date = date.slice(0, 15);
+    return date;
+  };
   return (
     <>
       <Header />
@@ -27,7 +32,7 @@ function Homepage() {
           />
         </div>
         <div className="right-info">
-          <div className="date">Fri 2 Dec 23</div>
+          <div className="date">{dataBuild(new Date())}</div>
           <div className="temp-homepage">
             27°
             <img src={icon} alt="icon" />

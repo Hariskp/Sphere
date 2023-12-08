@@ -156,3 +156,9 @@ Blog.css * {
   height: 60px;
   border-radius: 50%;
 }
+
+.blog-container {
+  background: rgb(251, 228, 228);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

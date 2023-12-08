@@ -265,7 +265,7 @@ textarea {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  padding: 45px;
+  padding: 35px;
 }
 
 .warning-info .temp-warn {
@@ -276,14 +276,15 @@ textarea {
 }
 
 .temp-warn img {
-  width: 50px;
-  height: 60px;
+  width: 110px;
+  height: 110px;
 }
 
 .warning-info .location-warn {
   font-size: 20px;
   display: flex;
   justify-content: center;
+  padding: 0.5rem;
 }
 
 .warning-info {
