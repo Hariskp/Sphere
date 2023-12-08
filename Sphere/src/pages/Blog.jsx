@@ -18,7 +18,7 @@ const Blog = () => {
 
   useEffect(() => {
     fetchAPI();
-  }, []);
+  });
 
   return (
     <>
@@ -65,6 +65,15 @@ const Blog = () => {
                 <span>Topic </span> : {item.title}
               </p>
               <p>{item.content.slice(0, 40)}</p>
+            </div>
+          ))}
+        </div>
+        <div className="blog-container">
+          {blog.map((item) => (
+            <div key={item.blogID}>
+              <img src={item.image} alt="" style={{ width: "40%" }} />
+              <h2>{item.title}</h2>
+              <p>{item.content}</p>
             </div>
           ))}
         </div>
