@@ -136,12 +136,10 @@ const Weather = () => {
                 <div className="map-container">
                   <div className="map-weather">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.637133811969!2d100.61278967516442!3d14.039510686383029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1701759051680!5m2!1sth!2sth"
                       width="500"
                       height="350"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
+                      src="https://embed.windy.com/embed2.html?lat=13.710&lon=100.459&detailLat=13.706&detailLon=100.460&width=500&height=350&zoom=5&level=surface&overlay=temp&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+                      frameborder="0"
                     ></iframe>
                   </div>
                 </div>
@@ -202,62 +200,6 @@ const Weather = () => {
                     <div className="visibility-range">{metertoKm}</div>
                     <div className="visibility-unit">km</div>
                     <div className="visibility-rate">{visibilityStatus}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="weekly">
-              <div className="weekly-container">
-                <div className="week">Weekly Weather</div>
-                <div className="container-weekly">
-                  <div className="monday-container">
-                    <div className="day-mon">Mon</div>
-                    <div className="mon-ico">
-                      <img src={icosun} alt="sun" />
-                    </div>
-                    <div className="mon-temp">27.8˚</div>
-                  </div>
-                  <div className="tuesday-container">
-                    <div className="day-tue">Tue</div>
-                    <div className="tue-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="tue-temp">28.2˚</div>
-                  </div>
-                  <div className="wednesday-container">
-                    <div className="day-wed">Wed</div>
-                    <div className="wed-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="wed-temp">31.1˚</div>
-                  </div>
-                  <div className="thursday-container">
-                    <div className="day-thu">Thu</div>
-                    <div className="thu-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="thu-temp">26.2˚</div>
-                  </div>
-                  <div className="friday-container">
-                    <div className="day-fri">Fri</div>
-                    <div className="fri-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="fri-temp">25.1˚</div>
-                  </div>
-                  <div className="satday-container">
-                    <div className="day-sat">Sat</div>
-                    <div className="sat-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="sat-temp">24.6˚</div>
-                  </div>
-                  <div className="sunday-container">
-                    <div className="day-sun">Sun</div>
-                    <div className="sun-ico">
-                      <img src={icosun} alt="" />
-                    </div>
-                    <div className="sun-temp">24.1˚</div>
                   </div>
                 </div>
               </div>
