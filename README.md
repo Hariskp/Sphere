@@ -5,7 +5,7 @@ Command : cd Sphere
 2.	Dependencies Installation 
 Command : npm install
 3.	Installing dependencies
-ติดตั้ง dependencies ดังนี้
+install dependencies 
   -	axios
   -	nodemon
   -	react
@@ -23,7 +23,7 @@ Command : cd server
 2.	Dependencies Installation 
 Command : npm install
 3.	Installing dependencies
-ติดตั้ง dependencies ดังนี้
+install dependencies 
   -	cors
   -	express
   -	mongoose
