@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Warning.css";
 import BannerImage from "../img/banner-warning.jpg";
 import icon from "../img/icon_rainy.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import keys from "../keys";
 import weatherapi from "../img/weather_api.svg";
 import notify from "../img/notify.svg";
+
+//calling API
+const api = {
+  key: keys.API_KEY,
+  base: keys.BASE_URL,
+  find: keys.FIND_L,
+  weath: keys.WEATHER,
+};
 
 function Warning() {
   //use date
@@ -15,6 +23,29 @@ function Warning() {
     date = date.slice(0, 15);
     return date;
   };
+
+  // Convert Kelvin to Celsius
+  const [celsiusT, setCelsiusT] = useState("");
+  useEffect(() => {
+    const celsiusTemp = weather.main && weather.main.temp - 273.15;
+    const roundedCel = Math.floor(celsiusTemp);
+    setCelsiusT(roundedCel);
+  });
+
+  const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState({});
+  const search = (e) => {
+    if (e.key === "Enter") {
+      fetch(`${api.weath}weather?q=${query}&appid=${api.key}`)
+        .then((res) => res.json())
+        .then((results) => {
+          setQuery("");
+          setWeather(results);
+          console.log(results);
+        });
+    }
+  };
+
   return (
     <>
       <Header />
@@ -23,24 +54,20 @@ function Warning() {
           <img src={BannerImage} alt="banner" />
           <div className="warning-info">
             <div className="date-warn">{dataBuild(new Date())}</div>
-            <div className="temp-warn">
-              27°
-              <img src={icon} alt="icon" />
+            <div className="temp-warn">{celsiusT}°</div>
+            <div className="location-warn">
+              {weather.name}, {weather.sys && weather.sys.country}
             </div>
-            <div className="location-warn">Bangkok, Thailand</div>
           </div>
           <input
             className="search-warn"
             type="text"
             placeholder="Searching here..."
+            onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            onKeyPress={search}
           />
         </div>
-
-        {/* <iframe
-        src="https://flood.gistda.or.th/"
-        frameborder="100"
-        style={{ width: "100%", height: "800px" }}
-      ></iframe> */}
         <div className="div-about-weather-api">
           <div className="text-about-weather-api">
             <h1>WHY ARE WEATHER FORECAST IMPORTANT ?</h1>
@@ -107,17 +134,18 @@ function Warning() {
           <br />
           <br />
         </div>
-        
-        <div className="disaster-warning-vertical-api-container">
-        </div>
+
+        <div className="disaster-warning-vertical-api-container"></div>
         <div className="disaster-warning-vertical-api">
-        {<iframe
-        src="https://tdaweb.disaster.go.th/tda/AlertHome?fbclid=IwAR01jGBoDzxBVhVNEIr1MpevaP3GkEgLDN8bPasqqcXPGiGxxHn7sNPXN6g"
-        frameborder="0"
-        style={{ width: "100%", height: "1900px" }}
-      ></iframe>}
-        <br/>
-        <br/>
+          {
+            <iframe
+              src="https://tdaweb.disaster.go.th/tda/AlertHome?fbclid=IwAR01jGBoDzxBVhVNEIr1MpevaP3GkEgLDN8bPasqqcXPGiGxxHn7sNPXN6g"
+              frameborder="0"
+              style={{ width: "100%", height: "1900px" }}
+            ></iframe>
+          }
+          <br />
+          <br />
         </div>
       </div>
       <Footer />

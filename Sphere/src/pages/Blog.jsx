@@ -6,6 +6,15 @@ import icon from "../img/icon_rainy.png";
 import icon_pencil from "../img/icon_pencil.png";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import keys from "../keys";
+
+//calling API
+const api = {
+  key: keys.API_KEY,
+  base: keys.BASE_URL,
+  find: keys.FIND_L,
+  weath: keys.WEATHER,
+};
 
 const Blog = () => {
   //use date
@@ -26,22 +35,46 @@ const Blog = () => {
     fetchAPI();
   }, []);
 
+  // Convert Kelvin to Celsius
+  const [celsiusT, setCelsiusT] = useState("");
+  useEffect(() => {
+    const celsiusTemp = weather.main && weather.main.temp - 273.15;
+    const roundedCel = Math.floor(celsiusTemp);
+    setCelsiusT(roundedCel);
+  });
+
+  const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState({});
+  const search = (e) => {
+    if (e.key === "Enter") {
+      fetch(`${api.weath}weather?q=${query}&appid=${api.key}`)
+        .then((res) => res.json())
+        .then((results) => {
+          setQuery("");
+          setWeather(results);
+          console.log(results);
+        });
+    }
+  };
+
   return (
     <>
       <Header />
       <div className="blog-header">
         {/* Blog Header */}
         <div className="blog-date">{dataBuild(new Date())}</div>
-        <div className="blog-temp">
-          30°
-          <img src={icon} alt="icon" />
+        <div className="blog-temp">{celsiusT}°</div>
+        <div className="blog-location">
+          {weather.name}, {weather.sys && weather.sys.country}
         </div>
-        <div className="blog-location">Bangkok, Thailand</div>
         <div className="blog-search-container">
           <input
             type="text"
             placeholder="→ Searching here...."
             className="blog-serchbar"
+            onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            onKeyPress={search}
           />
         </div>
       </div>

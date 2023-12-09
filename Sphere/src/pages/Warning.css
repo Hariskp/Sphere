@@ -299,9 +299,8 @@ textarea {
   z-index: 1;
 }
 
-
 .weather-warning-api {
-  position:absolute;
+  position: absolute;
   top: 1470px;
   left: 200px;
   height: 700px;
@@ -314,7 +313,6 @@ textarea {
   flex-direction: row;
 }
 
-
 .div-about-weather-api {
   display: flex;
   color: white;
@@ -324,15 +322,15 @@ textarea {
 
 .div-about-weather-api h1 {
   font-size: 40px;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   align-items: center;
   justify-content: center;
 }
 
 .div-about-weather-api p {
-font-family: 'Montserrat', sans-serif;
-font-size: 15px;
-width: 800px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  width: 800px;
 }
 
 .image-weather-api img {
@@ -352,16 +350,14 @@ width: 800px;
   width: 1700px;
 }
 
-
 .disaster-warning-api {
-  position:absolute;
+  position: absolute;
   top: 3175px;
   left: 200px;
   height: 700px;
   width: 1500px;
   align-items: center;
 }
-
 
 .disaster-warning-api-container {
   background-color: #1c1e26;
@@ -379,24 +375,24 @@ width: 800px;
 }
 
 .div-about-disaster-api p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   width: 800px;
-  }
+}
 
 .div-about-disaster-api h1 {
   font-size: 40px;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   align-items: center;
   justify-content: center;
 }
 
- .div-about-disaster-api {
+.div-about-disaster-api {
   display: flex;
   color: white;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .image-disaster-api img {
   align-items: right;
@@ -410,7 +406,7 @@ width: 800px;
 }
 
 .disaster-warning-vertical-api {
-  position:absolute;
+  position: absolute;
   top: 4000px;
   left: 200px;
   width: 1500px;
