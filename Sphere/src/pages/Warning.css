@@ -365,7 +365,7 @@ width: 800px;
 
 .disaster-warning-api-container {
   background-color: #1c1e26;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   height: 1000px;
   align-items: center;
   justify-content: center;
@@ -409,3 +409,19 @@ width: 800px;
   margin-left: 7rem;
 }
 
+.disaster-warning-vertical-api {
+  position:absolute;
+  top: 4000px;
+  left: 200px;
+  width: 1500px;
+  align-items: center;
+}
+
+.disaster-warning-vertical-api-container {
+  background-color: #1c1e26;
+  height: 1850px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1700px;
+}

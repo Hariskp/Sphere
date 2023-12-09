@@ -81,15 +81,13 @@ function Warning() {
         <br/>
         </div>
         
-
-        <div className="disaster-warning-vertical-api">
-        <div className="recent-font">
-          <h1>Disaster warning</h1>
+        <div className="disaster-warning-vertical-api-container">
         </div>
+        <div className="disaster-warning-vertical-api">
         {<iframe
         src="https://tdaweb.disaster.go.th/tda/AlertHome?fbclid=IwAR01jGBoDzxBVhVNEIr1MpevaP3GkEgLDN8bPasqqcXPGiGxxHn7sNPXN6g"
         frameborder="0"
-        style={{ width: "100%", height: "815px" }}
+        style={{ width: "100%", height: "1900px" }}
       ></iframe>}
         <br/>
         <br/>
