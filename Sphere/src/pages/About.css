@@ -28,14 +28,16 @@
 .sphere-developer-about {
   display: flex;
   margin: 5rem 5rem;
+  flex-direction: row;
 }
 
-.developer {
+.developer-about {
   font-size: 80px;
-  height: 110rem;
+  height: 120rem;
   color: white;
   left: 93%;
   writing-mode: vertical-lr;
+
 }
 
 .developer-about h1 {

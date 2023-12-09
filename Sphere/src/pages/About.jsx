@@ -97,7 +97,7 @@ const About = () => {
             </div>
           </div>
           <div className="developer-about">
-            <h1>SPHERE‏‏‎ ‎‏‏‎ ‎DEVELOPER</h1>
+            <h1>SPHERE‏‏‎  ‎DEVELOPER</h1>
           </div>
         </div>
         <Footer />
