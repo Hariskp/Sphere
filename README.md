@@ -1,4 +1,7 @@
 # Sphere
+
+Video descrition : https://youtu.be/ww-oLF-77dM
+
 Setup Sphere
 1.	cd to sphere (cd Sphere)
 Command : cd Sphere
