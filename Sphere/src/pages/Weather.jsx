@@ -86,18 +86,18 @@ const Weather = () => {
         .then((results) => {
           setWeather(results);
           console.log(results);
-          //   // เมื่อ fetch แรกเสร็จสิ้น ก็ทำ fetch ที่สอง
-          //   return fetch(
-          //     `${api.airp}air_pollution?lat=${results.coord.lat}&lon=${results.coord.lon}&appid=${api.key}`
-          //   );
-          // })
-          // .then((res2) => res2.json())
-          // .then((results2) => {
-          //   setAirpoll(results2);
-          //   console.log(results2);
-          // })
-          // .catch((error) => {
-          //   console.error("Error:", error);
+          // เมื่อ fetch แรกเสร็จสิ้น ก็ทำ fetch ที่สอง
+          return fetch(
+            `${api.airp}air_pollution?lat=${results.coord.lat}&lon=${results.coord.lon}&appid=${api.key}`
+          );
+        })
+        .then((res2) => res2.json())
+        .then((results2) => {
+          setAirpoll(results2);
+          console.log(results2);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
         });
     }
   };
