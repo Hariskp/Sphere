@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  width: auto;
+  height: 800px;
+  background-image: url("img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+  border-radius: 1px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.App:hover {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.App.hot {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 167, 16, 0.52),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("img/hot.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.App.cold {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 229, 255, 0.52),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("img/cold.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.App.rainy {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(121, 190, 190, 0.52),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("img/rainy.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+main {
+  min-height: 100px;
+  padding: 25px;
+}
+
+.search-container {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-bar {
+  color: black;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-container .search-bar:focus {
+  background-color: white;
+}
+
+.location-container {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.location-container .date {
+  color: white;
+  font-size: 20px;
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.weather-container .temp {
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 15px;
+  font-size: 100px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container .weather {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* เฟิส */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+i {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/*-----------global-----------*/
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+.flexSB {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.flex {
+  display: flex;
+}
+.paddingTB {
+  padding: 40px 0;
+}
+.paddingSmall {
+  padding: 20px 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.category {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: purple;
+}
+.row {
+  width: 50%;
+}
+.images {
+  position: relative;
+}
+.category1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 5px solid #663399;
+  width: auto;
+  display: block;
+  background: linear-gradient(to right, #663399 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.category1 span {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+.category1:hover {
+  background-position: left bottom;
+}
+.category1 span:hover {
+  color: #fff;
+}
+.title {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.comment i,
+.date i {
+  width: 30px;
+  color:#663399;
+  font-size: 13px;
+}
+
+.comment label,
+.date label {
+  font-size: 13px;
+  color: #868585;
+}
+.desc {
+  font-size: 13px;
+  margin: 10px 0;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
+}

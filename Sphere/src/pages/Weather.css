@@ -1,0 +1,281 @@
+.Weather {
+  background-color: #e1e1e1;
+}
+
+.search-container-weather {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-bar-weather {
+  color: black;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.temperature-container {
+  width: 500px;
+  height: 350px;
+  padding: 50px;
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  align-items: center;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+}
+
+.date-weather {
+  font-size: 30px;
+  justify-content: center;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+.container-temp {
+  display: flex;
+}
+
+.img-temp img {
+  margin-top: 20%;
+  width: 60%;
+}
+
+.temperature {
+  font-size: 150px;
+  justify-content: center;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+.location-weather {
+  font-size: 25px;
+  justify-content: center;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+.map-container {
+  width: auto;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+
+.map-weather {
+  display: flex;
+  border-radius: 5%;
+  border: 0;
+}
+.anmewza-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 1200px;
+}
+
+.cloud-container {
+  margin: 0 auto;
+  /* margin-top: 2rem;
+  margin-right: 7rem;
+  margin-left: auto; */
+  padding: 3%;
+  background-color: white;
+  width: 500px;
+  height: 330px;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-uv {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.cloud {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.cloud-info {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+  color: darkslategrey;
+}
+
+.humidity {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.humidity-rate {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.wind-status-container {
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 500px;
+  height: 620px;
+  /* margin: 2rem 0rem 0rem 7rem; */
+  margin: 0 auto;
+  padding: 3%;
+}
+
+.container-wind-status {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.sunrise {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.sunrise-time {
+  font-size: 35px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.sunset {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.sunset-time {
+  font-size: 35px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.wind-status {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.wind {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.unit {
+  font-size: 25px;
+  display: flex;
+  padding-left: 5%;
+  padding-top: 10%;
+}
+
+.air-pollution {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.air-pollution-rate {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.pm {
+  padding-top: 5%;
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.pm-rate {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.visibility-container {
+  /* margin-top: -16rem;
+  margin-right: 7rem;
+  margin-left: auto; */
+  margin: 0 auto;
+  margin-top: -18rem;
+  padding: 3%;
+  background-color: white;
+  width: 500px;
+  height: 260px;
+  border-radius: 5%;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: block;
+}
+
+.container-visibility {
+  /* display: flex; */
+  align-items: center;
+  justify-content: left;
+  display: grid;
+}
+
+.visibility-line {
+  display: flex;
+}
+
+.visibility {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.img-visibility img {
+  /* padding-left: 160px; */
+  margin-left: 60px;
+  width: 30%;
+  display: flex;
+}
+
+.visibility-range {
+  font-size: 85px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+  display: flex;
+}
+
+.visibility-unit {
+  font-size: 27px;
+  padding-left: 7%;
+  margin-top: -17%;
+}
+
+.visibility-rate {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 3%;
+}

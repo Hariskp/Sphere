@@ -1,120 +1,55 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inria Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
 }
 
 .navbar {
-    max-width: 1350px;
-    margin: 0 auto;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 nav {
-    background-color: #1C1E26;
+  background-color: #1c1e26;
 }
 
 .nav-con {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu li {
-    list-style: none;
-    padding: 10px;
+  list-style: none;
+  padding: 10px;
 }
 
 a {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 img {
-    width: 40px;
+  width: 40px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo h4 {
-    color: #FFFFFF;
-    padding: 10px;
+  color: #ffffff;
+  padding: 10px;
 }
 
 .logo p {
-    color: #FFFFFF;
-    font-size: 12px;
-}
-
-.menu-icon {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 5px;
-    background-color: #FFFFFF;
-    margin: 6px 0;
-    transition: 0.25s ease;
-}
-
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-}
-
-.menu-active {
-    display: block !important;
-}
-
-@media only screen and (min-width: 762px) {
-    .menu-icon {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 762px) {
-    .menu {
-        display: none;
-    }
-
-    .nav-con {
-        padding: 1rem;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu {
-        width: 100%;
-    }
-
-    .menu li {
-        padding: 1rem 0.5rem;
-        margin: 1rem 1rem;
-    }
-
-    .menu li:hover {
-        border-bottom: 1px solid #fff;
-        transition: 0.4s;
-    }
+  color: #ffffff;
+  font-size: 12px;
 }
