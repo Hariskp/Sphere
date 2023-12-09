@@ -45,7 +45,7 @@ const About = () => {
                 <li>Email : haris.kird@gmail.com</li>
                 <li>GitHub : Hariskp</li>
                 <li>LinkedIn : Haris Kirdpakdee</li>
-                <li>Role : Developer , Designer</li>
+                <li>Role : Header , Home page , Weather page , UI Design</li>
               </div>
               <div className="quote-r">
                 <h4>" A bad day doesn’t mean you have a bad life "</h4>
@@ -59,7 +59,7 @@ const About = () => {
                 <li>Email : chanut.kidw@gmail.com</li>
                 <li>GitHub : chanutkid</li>
                 <li>LinkedIn : Chanut Kidwat</li>
-                <li>Role : Developer , Designer</li>
+                <li>Role : Header , Home page , UI Design</li>
               </div>
               <div className="quote-n">
                 <h4>" This pain is only temporary "</h4>
@@ -73,7 +73,7 @@ const About = () => {
                 <li>Email : jittawatofficial@gmail.com</li>
                 <li>GitHub : Jittawatpdsr</li>
                 <li>LinkedIn : JITTAWAT P.</li>
-                <li>Role : Developer , Designer</li>
+                <li>Role : Warning page , About us page , Footer , UI Design</li>
               </div>
               <div className="quote-j">
                 <h4>" One day or Day one "</h4>
@@ -87,7 +87,7 @@ const About = () => {
                 <li>Email : first3902f@gmail.com</li>
                 <li>GitHub : NatthaphatxF1</li>
                 <li>LinkedIn : - </li>
-                <li>Role : Developer , Designer</li>
+                <li>Role : Warning page , News page , UI Design</li>
               </div>
               <div className="quote-f">
                 <h4>
