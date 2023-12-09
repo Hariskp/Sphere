@@ -406,13 +406,14 @@
 
 .blog-content-home {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   height: 150px;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 7rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .blog-content-home img {
