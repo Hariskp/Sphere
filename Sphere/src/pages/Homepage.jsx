@@ -2,15 +2,14 @@
 // import React, { useState, useEffect } from "react";
 import React, { useState, useEffect } from "react";
 import "./Homepage.css";
-import image from "../img/strom.webp";
-import icon from "../img/icon_rainy.png";
-import logo from "../img/Spherelogo.png";
-import image_1 from "../img/whatsSphere.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import sevdays from "../img/7daysforecast.png";
 import chmeq from "../img/ChiangMai_eq.jpg";
-import blog from "../img/blog.png";
+import blog_first from "../img/blog_1.jpg";
+import blog_second from "../img/blog_2.jpg";
+import blog_third from "../img/blog_3.jpg";
+import blog_fourth from "../img/blog_4.jpg";
 import capi from "../img/api.png";
 import map from "../img/map.png";
 import mobileapp from "../img/mobileapp.svg";
@@ -220,34 +219,22 @@ function Homepage() {
         <h1>BLOG</h1>
         <div className="blog-content-home">
           <div className="first-blog">
-            <img src={blog} alt="blog" />
+            <img src={blog_first} alt="blog" className="photo-first-blog" />
             <div className="tag-1">
-              5 Way to save your health when weather change.
+              ไทยอุณหภูมิสูงขึ้น กลางวันร้อน-ฝนตกบางแห่ง
             </div>
           </div>
           <div className="second-blog">
-            <img src={blog} alt="blog" />
-            <div className="tag-2">
-              5 Way to save your health when weather change.
-            </div>
+            <img src={blog_second} alt="blog" />
+            <div className="tag-2">ประกาศเตือนพายุโนรู</div>
           </div>
           <div className="third-blog">
-            <img src={blog} alt="blog" />
-            <div className="tag-3">
-              5 Way to save your health when weather change.
-            </div>
+            <img src={blog_third} alt="blog" />
+            <div className="tag-3">รู้จักกับเอลนีโญ</div>
           </div>
           <div className="fourth-blog">
-            <img src={blog} alt="blog" />
-            <div className="tag-4">
-              5 Way to save your health when weather change.
-            </div>
-          </div>
-          <div className="fifth-blog">
-            <img src={blog} alt="blog" />
-            <div className="tag-5">
-              5 Way to save your health when weather change.
-            </div>
+            <img src={blog_fourth} alt="blog" />
+            <div className="tag-4">ฝนถล่ม 35 จังหวัด</div>
           </div>
         </div>
       </div>
