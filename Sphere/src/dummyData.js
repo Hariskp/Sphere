@@ -412,17 +412,63 @@ export const popular = [
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
     link: "https://www.thaipbs.or.th/news/content/334181",
   },
+];
+
+export const disaster = [
   {
-    id: 17,
-    catgeory: "fun",
-    title: "มิวมิว",
-    date: "22 พ.ย. 2566",
+    id: 1,
+    catgeory: "disaster",
+    title: "ภัยพิบัติ อาจเป็นสัญญาณเตือนวิกฤติอากาศโลก",
+    date: "24 ก.ย. 2566",
     comments: 0,
-    cover: "../images/popular/popnews16.png",
-    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
-    link: "https://www.thaipbs.or.th/news/content/334181",
+    cover: "../images/popular/dis.png",
+    desc: "ผู้เชี่ยวชาญชี้ อาจเป็นสัญญาณเตือนการเกิดวิกฤติอากาศโลก หลังเดือนกันยายนมีภัยพิบัติเกิดขึ้นมากมาย พร้อมเผยผลทำนายปี 2050 แถบยุโรปเหนือจะเป็นที่พักตากอากาศแห่งใหม่นับตั้งแต่เข้าเดือนกันยายน ภายใน 12 วันแรก มีภัยพิบัติเกิดขึ้นมากมาย โดยเฉพาะอุทกภัย ที่เกิดขึ้นแล้วในอย่างน้อย 10 ประเทศและเขตแดน ซึ่งรวมถึงเหตุน้ำท่วมใหญ่ในลิเบีย ที่คร่าชีวิตผู้คนไปแล้วหลายพันคน จนปลุกกระแสความกังวลเรื่องการปรับตัวต่อแนวโน้มการเปลี่ยนแปลงสภาพภูมิอากาศที่จะเกิดขึ้นอีกในอนาคต   ",
+    link: "https://www.pptvhd36.com/news/%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8/206439",
+  },
+  {
+  id: 2,
+  catgeory: "disaster",
+  title: "ย้อนดูภัยพิบัติทั่วโลกในเดือน ก.ค. ที่ขึ้นชื่อว่าร้อนที่สุดเท่าที่เคยมีการบันทึก",
+  date: "3 ส.ค. 2566",
+  comments: 0,
+  cover: "../images/popular/dis3.png",
+  desc: "เดือนกรกฎาคมที่ผ่านมา ถือเป็นเดือนที่หลายประเทศทั่วโลกต้องเผชิญกับภัยพิบัติธรรมชาติร้ายแรง ทั้งไฟป่า พายุฝน น้ำท่วม สร้างความเสียหายมากมาย ขณะที่อุณหภูมิเฉลี่ยทั่วโลกทำสถิติเพิ่มสูงขึ้นเป็นประวัติการณ์ในเดือน ก.ค. ที่ผ่านมาด้วย",
+  link: "https://www.bbc.com/thai/articles/ceqwze2qn5wo",
+  },
+  {
+    id: 3,
+    catgeory: "disaster",
+    title: "ระทึก แผ่นดินไหว 6.1 เขย่าซินเจียง ประชาชนแตกตื่นอพยพหนี (คลิป)",
+    date: "31 ม.ค. 2566",
+    comments: 0,
+    cover: "../images/popular/dis2.png",
+    desc: "เกิดแผ่นดินไหวรุนแรง 6.1 ที่เขตปกครองตนเองซินเจียง ทางตะวันตกเฉียงเหนือของจีน แม้ว่าจุดศูนย์กลางของแผ่นดินไหวจะอยู่บริเวณห่างไกล ไม่ได้มีผู้คนอาศัยหนาแน่น แต่แรงสั่นสะเทือนไปทั่วบริเวณโดยรอบ",
+    link: "https://www.thairath.co.th/news/foreign/2616786",
+    },
+  {
+  id: 4,
+  catgeory: "disaster",
+  title: "น้ำป่าซัดรถยนต์ตกถนน จ.นราธิวาส เสียชีวิต 3 คน",
+  date: "18 ธ.ค. 2565",
+  comments: 0,
+  cover: "../images/popular/dis4.png",
+  desc: "ชาวบ้านและทหารช่วยเหลือผู้ติดอยู่ในรถยนต์ หลังน้ำป่าซัดรถไหลไปตามกระแสน้ำ ต.บองอ อ.ระแงะ จ.นราธิวาส เสียชีวิต 3 คน ส่วนเด็ก 2 คนรอดชีวิต",
+  link: "https://www.thaipbs.or.th/news/content/322679",
+  },
+  {
+    id: 5,
+    catgeory: "disaster",
+    title: "ดับอื้อพิษพายุไซโคลน-โซนร้อนนัลแก เร่งเยียวยาผู้ประสบภัย",
+    date: "31 ต.ค. 2565 ",
+    comments: 0,
+    cover: "../images/popular/dis5.png",
+    desc: "ที่ฟิลิปปินส์ ยอดผู้เสียชีวิตจากพายุโซนร้อนนัลแกทั่วประเทศพุ่งเป็น 48 ราย โดย 40 รายในจำนวนนี้อยู่ในภูมิภาคบังซาโมโร บนเกาะมินดาเนา ซึ่งเกิดดินถล่มและน้ำท่วมฉับพลัน ส่วนผู้สูญหายมี 22 ราย บาดเจ็บราว 40 ราย และอีกกว่า 170,000 ราย ต้องอพยพไปยังศูนย์พักพิง",
+    link: "https://www.thairath.co.th/news/foreign/2540295",
   },
 ];
+
+
+
 
 export const ppost = [
   {
@@ -517,23 +563,23 @@ export const lifestyle = [
 export const tpost = [
   {
     id: 1,
-    title: "US Promises to give Intel aid to locate the soldiers",
-    cover: "../images/tpost/tpost.webp",
+    title: "The latest Northeast Wisconsin weather forecast from Storm Team 5…",
+    cover: "../images/tpost/ttk1.png",
   },
   {
     id: 2,
-    title: "Renewable energy dead as industry waits for Policy",
-    cover: "../images/tpost/tpost2.jpg",
+    title: "Stormy Weather",
+    cover: "../images/tpost/tk2.png",
   },
   {
     id: 3,
-    title: "Mount Etna erupts fashion in nice looking pictures",
-    cover: "../images/tpost/tpost3.jpg",
+    title: "Delhi Weather Forecast: IMD Says Despite Strong Surface Winds National Capital To Witness 42 Deg C Tomorrow",
+    cover: "../images/tpost/tk3.png",
   },
 ];
 export const gallery = [
   {
-    cover: "../images/gallery/g1.jpg",
+    cover: "../images/gallery/gal1.png",
   },
   {
     cover: "../images/gallery/g2.jpg",
@@ -550,28 +596,28 @@ export const gallery = [
 ];
 export const discover = [
   {
-    title: "games",
-    cover: "../images/discover/d1.jpg",
+    title: "weather",
+    cover: "../images/discover/dv1.png",
   },
   {
-    title: "sports",
-    cover: "../images/discover/d2.jpg",
+    title: "disaster",
+    cover: "../images/discover/dv2.png",
   },
   {
-    title: "humour",
-    cover: "../images/discover/d3.jpg",
+    title: "environment",
+    cover: "../images/discover/dv3.png",
   },
   {
-    title: "gadgets",
-    cover: "../images/discover/d4.jpg",
+    title: "warning",
+    cover: "../images/discover/dv44.png",
   },
   {
-    title: "movies",
-    cover: "../images/discover/d5.jpg",
+    title: "health",
+    cover: "../images/discover/dv5.png",
   },
   {
-    title: "nitendo",
-    cover: "../images/discover/d6.jpg",
+    title: "gallery",
+    cover: "../images/discover/dv6.png",
   },
 ];
 {

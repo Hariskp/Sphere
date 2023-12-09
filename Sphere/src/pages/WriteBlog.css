@@ -1,0 +1,38 @@
+.writeblog-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.writeblog-container .input-con {
+  margin-bottom: 1rem;
+}
+.writeblog-container h2 {
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.writeblog-container .input-con .title {
+  font-size: 16px;
+}
+.writeblog-container .input-con input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.writeblog-container .input-con textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.writeblog-container button {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}

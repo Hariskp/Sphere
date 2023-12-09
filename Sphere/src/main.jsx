@@ -9,6 +9,9 @@ import Warning from "./pages/Warning.jsx";
 import Homepage from "./pages/Homepage.jsx";
 import Homepages from "./components/home/Homepages.jsx";
 import Blog from "./pages/Blog.jsx";
+import About from "./pages/About.jsx";
+import SinglePage from "./components/singlePage/SinglePage.jsx";
+import WriteBlog from "./pages/WriteBlog.jsx";
 
 import About from "./pages/About.jsx";
 
@@ -36,8 +39,20 @@ const router = createBrowserRouter([
     element: <Blog />,
   },
   {
+    path: "/writeblog",
+    element: <WriteBlog />,
+  },
+  {
     path: "/News",
     element: <Homepages />,
+  },
+  {
+    path: "/Aboutus",
+    element: <About />,
+  },
+  {
+    path: "/singlepage/:id",
+    element: <SinglePage />,
   },
 ]);
 
