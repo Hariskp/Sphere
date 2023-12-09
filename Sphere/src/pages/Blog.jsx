@@ -24,6 +24,16 @@ const Blog = () => {
     return date;
   };
   const [blog, setBlog] = useState([]);
+  const [filtersearch, setFilterSearch] = useState("");
+  const mewFilter = blog.filter((blog) => {
+    if (filtersearch === "") {
+      return blog;
+    }
+    return (
+      blog.title.toLowerCase().includes(filtersearch.toLowerCase()) ||
+      blog.author.toLowerCase().includes(filtersearch.toLowerCase())
+    );
+  });
 
   const fetchAPI = () => {
     axios.get("http://localhost:8080/getall").then((result) => {
@@ -41,7 +51,7 @@ const Blog = () => {
     const celsiusTemp = weather.main && weather.main.temp - 273.15;
     const roundedCel = Math.floor(celsiusTemp);
     setCelsiusT(roundedCel);
-  });
+  }, []);
 
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
@@ -83,13 +93,18 @@ const Blog = () => {
       <div className="blog-anmew-content">
         <h1 className="text">Blog</h1>
         <div className="containermew">
-          <input type="text" placeholder="search..." />
+          <input
+            type="text"
+            placeholder="search..."
+            value={filtersearch}
+            onChange={(e) => setFilterSearch(e.target.value)}
+          />
           <Link to={"/writeblog"} className="writeblog">
             Write Blog
           </Link>
         </div>
         <div className="blog-grid">
-          {blog.map((item) => (
+          {mewFilter.map((item) => (
             <div key={item.blogID} className="content">
               <img
                 src={item.image}
