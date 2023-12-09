@@ -1,6 +1,5 @@
 import React from 'react';
 import './Homepage.css'
-import image from '../img/strom.webp'
 import icon from '../img/icon_rainy.png'
 import logo from '../img/Spherelogo.png';
 import image_1 from '../img/whatsSphere.jpg'
