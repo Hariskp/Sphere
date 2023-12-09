@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App.jsx";
+import App from "./App.jsx";
 import "./index.css";
 
 import Weather from "./pages/Weather.jsx";
@@ -12,8 +12,6 @@ import Blog from "./pages/Blog.jsx";
 import About from "./pages/About.jsx";
 import SinglePage from "./components/singlePage/SinglePage.jsx";
 import WriteBlog from "./pages/WriteBlog.jsx";
-
-import About from "./pages/About.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -29,10 +27,6 @@ const router = createBrowserRouter([
   {
     path: "/Warning",
     element: <Warning />,
-  },
-  {
-    path: "/Aboutus",
-    element: <About />,
   },
   {
     path: "/Blog",
