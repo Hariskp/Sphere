@@ -6,14 +6,14 @@ Command : cd Sphere
 Command : npm install
 3.	Installing dependencies
 ติดตั้ง dependencies ดังนี้
-  o	axios
-  o	nodemon
-  o	react
-  o	react-dom
-  o	react-router-dom
-  o	react-slick
-  o	slick-carousel
-  o	sweetalert2
+  -	axios
+  -	nodemon
+  -	react
+  -	react-dom
+  -	react-router-dom
+  -	react-slick
+  -	slick-carousel
+  -	sweetalert2
 4.	Start sphere
 Command : npm run dev
 
@@ -24,11 +24,11 @@ Command : cd server
 Command : npm install
 3.	Installing dependencies
 ติดตั้ง dependencies ดังนี้
-o	cors
-o	express
-o	mongoose
-o	morgan
-o	nodemon
-o	uuid
+  -	cors
+  -	express
+  -	mongoose
+  -	morgan
+  -	nodemon
+  - uuid
 4.	Start server
 Command : npm run dev
