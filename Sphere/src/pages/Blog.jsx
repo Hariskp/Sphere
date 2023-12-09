@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import "./Blog.css";
 import blogbg from "../img/blog_bg.jpg";
@@ -51,7 +51,7 @@ const Blog = () => {
     const celsiusTemp = weather.main && weather.main.temp - 273.15;
     const roundedCel = Math.floor(celsiusTemp);
     setCelsiusT(roundedCel);
-  }, []);
+  });
 
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
