@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import "./Writeblog.css";
 import { useState } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const WriteBlog = () => {
   const [image, setImage] = useState("");
@@ -16,7 +17,13 @@ const WriteBlog = () => {
         content,
         image,
       })
-      .then(() => alert("Success"))
+      .then(() =>
+        Swal.fire({
+          title: "Good job!",
+          text: "You clicked the button!",
+          icon: "success",
+        })
+      )
       .then(() => window.location.replace("/Blog"));
   };
   return (
